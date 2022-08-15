@@ -1,0 +1,927 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		170D1C41279937D7009E6733 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170D1C40279937D7009E6733 /* LoginView.swift */; };
+		17382A3B279F706B0063FBDE /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17382A3A279F706B0063FBDE /* SignupView.swift */; };
+		17382A3D279F719C0063FBDE /* VerifyEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17382A3C279F719C0063FBDE /* VerifyEmailView.swift */; };
+		17642E3727DA5F45004C1341 /* PDFPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17642E3627DA5F45004C1341 /* PDFPreviewView.swift */; };
+		17642E3927DA616B004C1341 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17642E3827DA616B004C1341 /* PDFView.swift */; };
+		17781390279934350042A85D /* SAAGEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1778138F279934350042A85D /* SAAGEApp.swift */; };
+		17781392279934350042A85D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17781391279934350042A85D /* ContentView.swift */; };
+		17781394279934360042A85D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17781393279934360042A85D /* Assets.xcassets */; };
+		17781397279934360042A85D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17781396279934360042A85D /* Preview Assets.xcassets */; };
+		177813A1279934360042A85D /* SAAGETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177813A0279934360042A85D /* SAAGETests.swift */; };
+		177813AB279934360042A85D /* SAAGEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177813AA279934360042A85D /* SAAGEUITests.swift */; };
+		177813AD279934360042A85D /* SAAGEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177813AC279934360042A85D /* SAAGEUITestsLaunchTests.swift */; };
+		177F089827B0B8DA00DF80D4 /* EnterInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F089727B0B8DA00DF80D4 /* EnterInfoView.swift */; };
+		177F089B27B0B95400DF80D4 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F089A27B0B95400DF80D4 /* FormView.swift */; };
+		177F089D27B0B9D900DF80D4 /* BasicInfoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F089C27B0B9D900DF80D4 /* BasicInfoFormView.swift */; };
+		177F089F27B0BA1C00DF80D4 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F089E27B0BA1C00DF80D4 /* FormViewModel.swift */; };
+		177F08A227B0BA4800DF80D4 /* FormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177F08A127B0BA4800DF80D4 /* FormModel.swift */; };
+		179497DD27C6F853006D8D2A /* SharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179497DC27C6F853006D8D2A /* SharingView.swift */; };
+		179497DF27C6F876006D8D2A /* SharingPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179497DE27C6F876006D8D2A /* SharingPlanView.swift */; };
+		179497E127C6F89E006D8D2A /* PDFCreatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179497E027C6F89E006D8D2A /* PDFCreatedView.swift */; };
+		179497E427C6FA51006D8D2A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 179497E327C6FA51006D8D2A /* Alamofire */; };
+		179497E627C6FB24006D8D2A /* CONFIG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179497E527C6FB24006D8D2A /* CONFIG.swift */; };
+		179497E827C6FB7C006D8D2A /* Mailgun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179497E727C6FB7C006D8D2A /* Mailgun.swift */; };
+		179497EA27C6FBBB006D8D2A /* PDFSharedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179497E927C6FBBB006D8D2A /* PDFSharedView.swift */; };
+		17B895FB27DA680F00789427 /* TPPDF in Frameworks */ = {isa = PBXBuildFile; productRef = 17B895FA27DA680F00789427 /* TPPDF */; };
+		17F4AE0727A7806D00595352 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE0627A7806D00595352 /* FirebaseAnalytics */; };
+		17F4AE0927A7806D00595352 /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE0827A7806D00595352 /* FirebaseAnalyticsSwift-Beta */; };
+		17F4AE0B27A7806D00595352 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE0A27A7806D00595352 /* FirebaseAuth */; };
+		17F4AE0D27A7806D00595352 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE0C27A7806D00595352 /* FirebaseDatabase */; };
+		17F4AE0F27A7806D00595352 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE0E27A7806D00595352 /* FirebaseDatabaseSwift-Beta */; };
+		17F4AE1127A7806D00595352 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE1027A7806D00595352 /* FirebaseFirestore */; };
+		17F4AE1327A7806D00595352 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE1227A7806D00595352 /* FirebaseFirestoreSwift-Beta */; };
+		17F4AE1527A7806D00595352 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE1427A7806D00595352 /* FirebaseStorage */; };
+		17F4AE1727A7806D00595352 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE1627A7806D00595352 /* FirebaseStorageSwift-Beta */; };
+		FB8BE0D62799C54200C8A561 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8BE0D52799C54200C8A561 /* AboutView.swift */; };
+		FB8BE0D82799C6BE00C8A561 /* NavigationMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8BE0D72799C6BE00C8A561 /* NavigationMenuView.swift */; };
+		FB8BE0DA2799C71300C8A561 /* HowToUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8BE0D92799C71300C8A561 /* HowToUseView.swift */; };
+		FB8BE0DD2799CA3200C8A561 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8BE0DC2799CA3200C8A561 /* AppViewModel.swift */; };
+		FB8BE0E027A2039800C8A561 /* CarePlanOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8BE0DF27A2039800C8A561 /* CarePlanOptionsView.swift */; };
+		FB8BE0E227A2064300C8A561 /* MyCarePlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8BE0E127A2064300C8A561 /* MyCarePlanView.swift */; };
+		FB90F6FD27AF78B800708974 /* DeleteOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F6FC27AF78B800708974 /* DeleteOptionsView.swift */; };
+		FB90F6FF27AF78ED00708974 /* DeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F6FE27AF78ED00708974 /* DeleteView.swift */; };
+		FB90F70127AF792100708974 /* DeleteConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F70027AF792100708974 /* DeleteConfirmationView.swift */; };
+		FB90F70327AF794100708974 /* DeletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F70227AF794100708974 /* DeletedView.swift */; };
+		FB90F70727B0C72600708974 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17F4AE0327A77FD500595352 /* GoogleService-Info.plist */; };
+		FB90F70927BDF48500708974 /* AutonomicDysreflexiaFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F70827BDF48400708974 /* AutonomicDysreflexiaFormView.swift */; };
+		FB90F70B27BDF4AD00708974 /* BladderFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F70A27BDF4AD00708974 /* BladderFormView.swift */; };
+		FB90F70D27BDF4C600708974 /* SkinFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F70C27BDF4C600708974 /* SkinFormView.swift */; };
+		FB90F70F27BDF4E000708974 /* SpinalCordInjuryFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F70E27BDF4E000708974 /* SpinalCordInjuryFormView.swift */; };
+		FB90F71127BDF4EF00708974 /* TransfersFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F71027BDF4EF00708974 /* TransfersFormView.swift */; };
+		FB90F71327BDF52400708974 /* BowelFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F71227BDF52400708974 /* BowelFormView.swift */; };
+		FB90F71527C5B64A00708974 /* RespirationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F71427C5B64A00708974 /* RespirationFormView.swift */; };
+		FB90F71827D851B300708974 /* CuttlyResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F71727D851B300708974 /* CuttlyResponseModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1778139D279934360042A85D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17781384279934340042A85D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1778138B279934350042A85D;
+			remoteInfo = SAAGE;
+		};
+		177813A7279934360042A85D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17781384279934340042A85D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1778138B279934350042A85D;
+			remoteInfo = SAAGE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		170D1C40279937D7009E6733 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		17382A3A279F706B0063FBDE /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		17382A3C279F719C0063FBDE /* VerifyEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailView.swift; sourceTree = "<group>"; };
+		17642E3627DA5F45004C1341 /* PDFPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPreviewView.swift; sourceTree = "<group>"; };
+		17642E3827DA616B004C1341 /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
+		1778138C279934350042A85D /* SAAGE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAAGE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1778138F279934350042A85D /* SAAGEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAGEApp.swift; sourceTree = "<group>"; };
+		17781391279934350042A85D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17781393279934360042A85D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17781396279934360042A85D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1778139C279934360042A85D /* SAAGETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAAGETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		177813A0279934360042A85D /* SAAGETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAGETests.swift; sourceTree = "<group>"; };
+		177813A6279934360042A85D /* SAAGEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAAGEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		177813AA279934360042A85D /* SAAGEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAGEUITests.swift; sourceTree = "<group>"; };
+		177813AC279934360042A85D /* SAAGEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAAGEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		177F089727B0B8DA00DF80D4 /* EnterInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterInfoView.swift; sourceTree = "<group>"; };
+		177F089A27B0B95400DF80D4 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		177F089C27B0B9D900DF80D4 /* BasicInfoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInfoFormView.swift; sourceTree = "<group>"; };
+		177F089E27B0BA1C00DF80D4 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		177F08A127B0BA4800DF80D4 /* FormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModel.swift; sourceTree = "<group>"; };
+		179497DC27C6F853006D8D2A /* SharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingView.swift; sourceTree = "<group>"; };
+		179497DE27C6F876006D8D2A /* SharingPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingPlanView.swift; sourceTree = "<group>"; };
+		179497E027C6F89E006D8D2A /* PDFCreatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCreatedView.swift; sourceTree = "<group>"; };
+		179497E527C6FB24006D8D2A /* CONFIG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CONFIG.swift; sourceTree = "<group>"; };
+		179497E727C6FB7C006D8D2A /* Mailgun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mailgun.swift; sourceTree = "<group>"; };
+		179497E927C6FBBB006D8D2A /* PDFSharedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFSharedView.swift; sourceTree = "<group>"; };
+		17F4AE0327A77FD500595352 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB36C18527ECE03D00619158 /* SAAGE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SAAGE.entitlements; sourceTree = "<group>"; };
+		FB8BE0D52799C54200C8A561 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		FB8BE0D72799C6BE00C8A561 /* NavigationMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMenuView.swift; sourceTree = "<group>"; };
+		FB8BE0D92799C71300C8A561 /* HowToUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseView.swift; sourceTree = "<group>"; };
+		FB8BE0DC2799CA3200C8A561 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		FB8BE0DF27A2039800C8A561 /* CarePlanOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarePlanOptionsView.swift; sourceTree = "<group>"; };
+		FB8BE0E127A2064300C8A561 /* MyCarePlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarePlanView.swift; sourceTree = "<group>"; };
+		FB90F6FC27AF78B800708974 /* DeleteOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteOptionsView.swift; sourceTree = "<group>"; };
+		FB90F6FE27AF78ED00708974 /* DeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteView.swift; sourceTree = "<group>"; };
+		FB90F70027AF792100708974 /* DeleteConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteConfirmationView.swift; sourceTree = "<group>"; };
+		FB90F70227AF794100708974 /* DeletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletedView.swift; sourceTree = "<group>"; };
+		FB90F70427AF7DDD00708974 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		FB90F70827BDF48400708974 /* AutonomicDysreflexiaFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutonomicDysreflexiaFormView.swift; sourceTree = "<group>"; };
+		FB90F70A27BDF4AD00708974 /* BladderFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BladderFormView.swift; sourceTree = "<group>"; };
+		FB90F70C27BDF4C600708974 /* SkinFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinFormView.swift; sourceTree = "<group>"; };
+		FB90F70E27BDF4E000708974 /* SpinalCordInjuryFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinalCordInjuryFormView.swift; sourceTree = "<group>"; };
+		FB90F71027BDF4EF00708974 /* TransfersFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersFormView.swift; sourceTree = "<group>"; };
+		FB90F71227BDF52400708974 /* BowelFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowelFormView.swift; sourceTree = "<group>"; };
+		FB90F71427C5B64A00708974 /* RespirationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespirationFormView.swift; sourceTree = "<group>"; };
+		FB90F71727D851B300708974 /* CuttlyResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuttlyResponseModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17781389279934350042A85D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B895FB27DA680F00789427 /* TPPDF in Frameworks */,
+				17F4AE0F27A7806D00595352 /* FirebaseDatabaseSwift-Beta in Frameworks */,
+				17F4AE0927A7806D00595352 /* FirebaseAnalyticsSwift-Beta in Frameworks */,
+				17F4AE1327A7806D00595352 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				17F4AE0B27A7806D00595352 /* FirebaseAuth in Frameworks */,
+				17F4AE0D27A7806D00595352 /* FirebaseDatabase in Frameworks */,
+				179497E427C6FA51006D8D2A /* Alamofire in Frameworks */,
+				17F4AE1727A7806D00595352 /* FirebaseStorageSwift-Beta in Frameworks */,
+				17F4AE1527A7806D00595352 /* FirebaseStorage in Frameworks */,
+				17F4AE0727A7806D00595352 /* FirebaseAnalytics in Frameworks */,
+				17F4AE1127A7806D00595352 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17781399279934360042A85D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177813A3279934360042A85D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		170D1C3E2799378D009E6733 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17781391279934350042A85D /* ContentView.swift */,
+				FB8BE0D72799C6BE00C8A561 /* NavigationMenuView.swift */,
+				FB8BE0D52799C54200C8A561 /* AboutView.swift */,
+				FB8BE0D92799C71300C8A561 /* HowToUseView.swift */,
+				170D1C3F279937B4009E6733 /* AuthViews */,
+				FB8BE0DE27A2037700C8A561 /* MyCarePlanViews */,
+				177F089927B0B93D00DF80D4 /* FormViews */,
+				179497DB27C6F82D006D8D2A /* SharingViews */,
+				FB90F6FB27AF788B00708974 /* DeleteViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		170D1C3F279937B4009E6733 /* AuthViews */ = {
+			isa = PBXGroup;
+			children = (
+				170D1C40279937D7009E6733 /* LoginView.swift */,
+				17382A3A279F706B0063FBDE /* SignupView.swift */,
+				17382A3C279F719C0063FBDE /* VerifyEmailView.swift */,
+			);
+			path = AuthViews;
+			sourceTree = "<group>";
+		};
+		17781383279934340042A85D = {
+			isa = PBXGroup;
+			children = (
+				1778138E279934350042A85D /* SAAGE */,
+				1778139F279934360042A85D /* SAAGETests */,
+				177813A9279934360042A85D /* SAAGEUITests */,
+				17F4AE0327A77FD500595352 /* GoogleService-Info.plist */,
+				1778138D279934350042A85D /* Products */,
+				FB90F70627B0C31200708974 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		1778138D279934350042A85D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1778138C279934350042A85D /* SAAGE.app */,
+				1778139C279934360042A85D /* SAAGETests.xctest */,
+				177813A6279934360042A85D /* SAAGEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1778138E279934350042A85D /* SAAGE */ = {
+			isa = PBXGroup;
+			children = (
+				FB36C18527ECE03D00619158 /* SAAGE.entitlements */,
+				1778138F279934350042A85D /* SAAGEApp.swift */,
+				177F08A027B0BA3200DF80D4 /* Models */,
+				FB8BE0DB2799CA1C00C8A561 /* ViewModels */,
+				170D1C3E2799378D009E6733 /* Views */,
+				17781393279934360042A85D /* Assets.xcassets */,
+				17781395279934360042A85D /* Preview Content */,
+				179497E527C6FB24006D8D2A /* CONFIG.swift */,
+				179497E727C6FB7C006D8D2A /* Mailgun.swift */,
+			);
+			path = SAAGE;
+			sourceTree = "<group>";
+		};
+		17781395279934360042A85D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				17781396279934360042A85D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1778139F279934360042A85D /* SAAGETests */ = {
+			isa = PBXGroup;
+			children = (
+				177813A0279934360042A85D /* SAAGETests.swift */,
+			);
+			path = SAAGETests;
+			sourceTree = "<group>";
+		};
+		177813A9279934360042A85D /* SAAGEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				177813AA279934360042A85D /* SAAGEUITests.swift */,
+				177813AC279934360042A85D /* SAAGEUITestsLaunchTests.swift */,
+			);
+			path = SAAGEUITests;
+			sourceTree = "<group>";
+		};
+		177F089927B0B93D00DF80D4 /* FormViews */ = {
+			isa = PBXGroup;
+			children = (
+				177F089A27B0B95400DF80D4 /* FormView.swift */,
+				177F089C27B0B9D900DF80D4 /* BasicInfoFormView.swift */,
+				FB90F70E27BDF4E000708974 /* SpinalCordInjuryFormView.swift */,
+				FB90F70827BDF48400708974 /* AutonomicDysreflexiaFormView.swift */,
+				FB90F70A27BDF4AD00708974 /* BladderFormView.swift */,
+				FB90F70C27BDF4C600708974 /* SkinFormView.swift */,
+				FB90F71027BDF4EF00708974 /* TransfersFormView.swift */,
+				FB90F71227BDF52400708974 /* BowelFormView.swift */,
+				FB90F71427C5B64A00708974 /* RespirationFormView.swift */,
+			);
+			path = FormViews;
+			sourceTree = "<group>";
+		};
+		177F08A027B0BA3200DF80D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				177F08A127B0BA4800DF80D4 /* FormModel.swift */,
+				FB90F71727D851B300708974 /* CuttlyResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		179497DB27C6F82D006D8D2A /* SharingViews */ = {
+			isa = PBXGroup;
+			children = (
+				179497DC27C6F853006D8D2A /* SharingView.swift */,
+				179497DE27C6F876006D8D2A /* SharingPlanView.swift */,
+				17642E3627DA5F45004C1341 /* PDFPreviewView.swift */,
+				179497E027C6F89E006D8D2A /* PDFCreatedView.swift */,
+				179497E927C6FBBB006D8D2A /* PDFSharedView.swift */,
+				17642E3827DA616B004C1341 /* PDFView.swift */,
+			);
+			path = SharingViews;
+			sourceTree = "<group>";
+		};
+		FB8BE0DB2799CA1C00C8A561 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FB8BE0DC2799CA3200C8A561 /* AppViewModel.swift */,
+				177F089E27B0BA1C00DF80D4 /* FormViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FB8BE0DE27A2037700C8A561 /* MyCarePlanViews */ = {
+			isa = PBXGroup;
+			children = (
+				FB8BE0E127A2064300C8A561 /* MyCarePlanView.swift */,
+				FB8BE0DF27A2039800C8A561 /* CarePlanOptionsView.swift */,
+				177F089727B0B8DA00DF80D4 /* EnterInfoView.swift */,
+			);
+			path = MyCarePlanViews;
+			sourceTree = "<group>";
+		};
+		FB90F6FB27AF788B00708974 /* DeleteViews */ = {
+			isa = PBXGroup;
+			children = (
+				FB90F6FE27AF78ED00708974 /* DeleteView.swift */,
+				FB90F6FC27AF78B800708974 /* DeleteOptionsView.swift */,
+				FB90F70027AF792100708974 /* DeleteConfirmationView.swift */,
+				FB90F70227AF794100708974 /* DeletedView.swift */,
+			);
+			path = DeleteViews;
+			sourceTree = "<group>";
+		};
+		FB90F70627B0C31200708974 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				FB90F70427AF7DDD00708974 /* FormViewModel.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1778138B279934350042A85D /* SAAGE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177813B0279934360042A85D /* Build configuration list for PBXNativeTarget "SAAGE" */;
+			buildPhases = (
+				17781388279934350042A85D /* Sources */,
+				17781389279934350042A85D /* Frameworks */,
+				1778138A279934350042A85D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAAGE;
+			packageProductDependencies = (
+				17F4AE0627A7806D00595352 /* FirebaseAnalytics */,
+				17F4AE0827A7806D00595352 /* FirebaseAnalyticsSwift-Beta */,
+				17F4AE0A27A7806D00595352 /* FirebaseAuth */,
+				17F4AE0C27A7806D00595352 /* FirebaseDatabase */,
+				17F4AE0E27A7806D00595352 /* FirebaseDatabaseSwift-Beta */,
+				17F4AE1027A7806D00595352 /* FirebaseFirestore */,
+				17F4AE1227A7806D00595352 /* FirebaseFirestoreSwift-Beta */,
+				17F4AE1427A7806D00595352 /* FirebaseStorage */,
+				17F4AE1627A7806D00595352 /* FirebaseStorageSwift-Beta */,
+				179497E327C6FA51006D8D2A /* Alamofire */,
+				17B895FA27DA680F00789427 /* TPPDF */,
+			);
+			productName = SAAGE;
+			productReference = 1778138C279934350042A85D /* SAAGE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1778139B279934360042A85D /* SAAGETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177813B3279934360042A85D /* Build configuration list for PBXNativeTarget "SAAGETests" */;
+			buildPhases = (
+				17781398279934360042A85D /* Sources */,
+				17781399279934360042A85D /* Frameworks */,
+				1778139A279934360042A85D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1778139E279934360042A85D /* PBXTargetDependency */,
+			);
+			name = SAAGETests;
+			productName = SAAGETests;
+			productReference = 1778139C279934360042A85D /* SAAGETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		177813A5279934360042A85D /* SAAGEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177813B6279934360042A85D /* Build configuration list for PBXNativeTarget "SAAGEUITests" */;
+			buildPhases = (
+				177813A2279934360042A85D /* Sources */,
+				177813A3279934360042A85D /* Frameworks */,
+				177813A4279934360042A85D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				177813A8279934360042A85D /* PBXTargetDependency */,
+			);
+			name = SAAGEUITests;
+			productName = SAAGEUITests;
+			productReference = 177813A6279934360042A85D /* SAAGEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17781384279934340042A85D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					1778138B279934350042A85D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					1778139B279934360042A85D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 1778138B279934350042A85D;
+					};
+					177813A5279934360042A85D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 1778138B279934350042A85D;
+					};
+				};
+			};
+			buildConfigurationList = 17781387279934340042A85D /* Build configuration list for PBXProject "SAAGE" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17781383279934340042A85D;
+			packageReferences = (
+				17F4AE0527A7806D00595352 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				179497E227C6FA50006D8D2A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				17B895F927DA680E00789427 /* XCRemoteSwiftPackageReference "TPPDF" */,
+			);
+			productRefGroup = 1778138D279934350042A85D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1778138B279934350042A85D /* SAAGE */,
+				1778139B279934360042A85D /* SAAGETests */,
+				177813A5279934360042A85D /* SAAGEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1778138A279934350042A85D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB90F70727B0C72600708974 /* GoogleService-Info.plist in Resources */,
+				17781397279934360042A85D /* Preview Assets.xcassets in Resources */,
+				17781394279934360042A85D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1778139A279934360042A85D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177813A4279934360042A85D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17781388279934350042A85D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB90F70F27BDF4E000708974 /* SpinalCordInjuryFormView.swift in Sources */,
+				177F089F27B0BA1C00DF80D4 /* FormViewModel.swift in Sources */,
+				179497DF27C6F876006D8D2A /* SharingPlanView.swift in Sources */,
+				177F089B27B0B95400DF80D4 /* FormView.swift in Sources */,
+				17382A3D279F719C0063FBDE /* VerifyEmailView.swift in Sources */,
+				FB8BE0DA2799C71300C8A561 /* HowToUseView.swift in Sources */,
+				FB90F70927BDF48500708974 /* AutonomicDysreflexiaFormView.swift in Sources */,
+				179497E827C6FB7C006D8D2A /* Mailgun.swift in Sources */,
+				FB90F70D27BDF4C600708974 /* SkinFormView.swift in Sources */,
+				17642E3927DA616B004C1341 /* PDFView.swift in Sources */,
+				FB90F70B27BDF4AD00708974 /* BladderFormView.swift in Sources */,
+				17642E3727DA5F45004C1341 /* PDFPreviewView.swift in Sources */,
+				FB8BE0D82799C6BE00C8A561 /* NavigationMenuView.swift in Sources */,
+				FB8BE0E027A2039800C8A561 /* CarePlanOptionsView.swift in Sources */,
+				FB8BE0DD2799CA3200C8A561 /* AppViewModel.swift in Sources */,
+				FB8BE0D62799C54200C8A561 /* AboutView.swift in Sources */,
+				179497DD27C6F853006D8D2A /* SharingView.swift in Sources */,
+				17382A3B279F706B0063FBDE /* SignupView.swift in Sources */,
+				177F089827B0B8DA00DF80D4 /* EnterInfoView.swift in Sources */,
+				170D1C41279937D7009E6733 /* LoginView.swift in Sources */,
+				179497E127C6F89E006D8D2A /* PDFCreatedView.swift in Sources */,
+				FB90F71827D851B300708974 /* CuttlyResponseModel.swift in Sources */,
+				FB90F70327AF794100708974 /* DeletedView.swift in Sources */,
+				FB90F6FD27AF78B800708974 /* DeleteOptionsView.swift in Sources */,
+				17781392279934350042A85D /* ContentView.swift in Sources */,
+				179497E627C6FB24006D8D2A /* CONFIG.swift in Sources */,
+				17781390279934350042A85D /* SAAGEApp.swift in Sources */,
+				FB90F6FF27AF78ED00708974 /* DeleteView.swift in Sources */,
+				FB90F71527C5B64A00708974 /* RespirationFormView.swift in Sources */,
+				FB90F70127AF792100708974 /* DeleteConfirmationView.swift in Sources */,
+				179497EA27C6FBBB006D8D2A /* PDFSharedView.swift in Sources */,
+				FB8BE0E227A2064300C8A561 /* MyCarePlanView.swift in Sources */,
+				177F089D27B0B9D900DF80D4 /* BasicInfoFormView.swift in Sources */,
+				FB90F71127BDF4EF00708974 /* TransfersFormView.swift in Sources */,
+				FB90F71327BDF52400708974 /* BowelFormView.swift in Sources */,
+				177F08A227B0BA4800DF80D4 /* FormModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17781398279934360042A85D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177813A1279934360042A85D /* SAAGETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177813A2279934360042A85D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177813AD279934360042A85D /* SAAGEUITestsLaunchTests.swift in Sources */,
+				177813AB279934360042A85D /* SAAGEUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1778139E279934360042A85D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1778138B279934350042A85D /* SAAGE */;
+			targetProxy = 1778139D279934360042A85D /* PBXContainerItemProxy */;
+		};
+		177813A8279934360042A85D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1778138B279934350042A85D /* SAAGE */;
+			targetProxy = 177813A7279934360042A85D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		177813AE279934360042A85D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		177813AF279934360042A85D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		177813B1279934360042A85D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SAAGE/SAAGE.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SAAGE/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uoft.SAAGE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		177813B2279934360042A85D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SAAGE/SAAGE.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SAAGE/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uoft.SAAGE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		177813B4279934360042A85D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uoft.SAAGETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAAGE.app/SAAGE";
+			};
+			name = Debug;
+		};
+		177813B5279934360042A85D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uoft.SAAGETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAAGE.app/SAAGE";
+			};
+			name = Release;
+		};
+		177813B7279934360042A85D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uoft.SAAGEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SAAGE;
+			};
+			name = Debug;
+		};
+		177813B8279934360042A85D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uoft.SAAGEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SAAGE;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17781387279934340042A85D /* Build configuration list for PBXProject "SAAGE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177813AE279934360042A85D /* Debug */,
+				177813AF279934360042A85D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177813B0279934360042A85D /* Build configuration list for PBXNativeTarget "SAAGE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177813B1279934360042A85D /* Debug */,
+				177813B2279934360042A85D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177813B3279934360042A85D /* Build configuration list for PBXNativeTarget "SAAGETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177813B4279934360042A85D /* Debug */,
+				177813B5279934360042A85D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177813B6279934360042A85D /* Build configuration list for PBXNativeTarget "SAAGEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177813B7279934360042A85D /* Debug */,
+				177813B8279934360042A85D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		179497E227C6FA50006D8D2A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		17B895F927DA680E00789427 /* XCRemoteSwiftPackageReference "TPPDF" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/techprimate/TPPDF";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		17F4AE0527A7806D00595352 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		179497E327C6FA51006D8D2A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 179497E227C6FA50006D8D2A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		17B895FA27DA680F00789427 /* TPPDF */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17B895F927DA680E00789427 /* XCRemoteSwiftPackageReference "TPPDF" */;
+			productName = TPPDF;
+		};
+		17F4AE0627A7806D00595352 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17F4AE0527A7806D00595352 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		17F4AE0827A7806D00595352 /* FirebaseAnalyticsSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17F4AE0527A7806D00595352 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAnalyticsSwift-Beta";
+		};
+		17F4AE0A27A7806D00595352 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17F4AE0527A7806D00595352 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		17F4AE0C27A7806D00595352 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17F4AE0527A7806D00595352 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		17F4AE0E27A7806D00595352 /* FirebaseDatabaseSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17F4AE0527A7806D00595352 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseDatabaseSwift-Beta";
+		};
+		17F4AE1027A7806D00595352 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17F4AE0527A7806D00595352 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		17F4AE1227A7806D00595352 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17F4AE0527A7806D00595352 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		17F4AE1427A7806D00595352 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17F4AE0527A7806D00595352 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		17F4AE1627A7806D00595352 /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17F4AE0527A7806D00595352 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 17781384279934340042A85D /* Project object */;
+}

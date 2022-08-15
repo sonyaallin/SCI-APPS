@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>202041065070-vhgks1qj5aavun7vtn2t80bqgrqhflci.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.202041065070-vhgks1qj5aavun7vtn2t80bqgrqhflci</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBPfymAkVeQlMFTHb_mhmp4Kn3ka8B46qY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>202041065070</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>co.akapp.Mindfulness</string>
+	<key>PROJECT_ID</key>
+	<string>spinalinjury-dda69</string>
+	<key>STORAGE_BUCKET</key>
+	<string>spinalinjury-dda69.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<true/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:202041065070:ios:021da68870b29ce476f07f</string>
+</dict>
+</plist>

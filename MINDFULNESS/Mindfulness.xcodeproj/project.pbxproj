@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BF40C6B27BB20F5000354BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF40C6A27BB20F5000354BC /* AppDelegate.swift */; };
+		5BF40C6D27BB20F5000354BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF40C6C27BB20F5000354BC /* SceneDelegate.swift */; };
+		5BF40C6F27BB20F5000354BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF40C6E27BB20F5000354BC /* ViewController.swift */; };
+		5BF40C7227BB20F5000354BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF40C7027BB20F5000354BC /* Main.storyboard */; };
+		5BF40C7427BB20F9000354BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF40C7327BB20F9000354BC /* Assets.xcassets */; };
+		5BF40C7727BB20F9000354BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF40C7527BB20F9000354BC /* LaunchScreen.storyboard */; };
+		B4017F5B27C701FE0070A71B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B4017F5A27C701FE0070A71B /* FirebaseAnalytics */; };
+		B4017F5D27C701FE0070A71B /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B4017F5C27C701FE0070A71B /* FirebaseAnalyticsSwift-Beta */; };
+		B4017F5F27C701FE0070A71B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B4017F5E27C701FE0070A71B /* FirebaseAuth */; };
+		B4017F6127C701FE0070A71B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B4017F6027C701FE0070A71B /* FirebaseDatabase */; };
+		B4017F6327C701FE0070A71B /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B4017F6227C701FE0070A71B /* FirebaseDatabaseSwift-Beta */; };
+		B4017F6527C701FE0070A71B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B4017F6427C701FE0070A71B /* FirebaseFirestore */; };
+		B4017F6727C701FE0070A71B /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B4017F6627C701FE0070A71B /* FirebaseFirestoreSwift-Beta */; };
+		B4017F6927C701FE0070A71B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B4017F6827C701FE0070A71B /* FirebaseStorage */; };
+		B4017F6B27C701FE0070A71B /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B4017F6A27C701FE0070A71B /* FirebaseStorageSwift-Beta */; };
+		B4017F6D27C70E1E0070A71B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4017F6C27C70E1E0070A71B /* Constants.swift */; };
+		B410CCCC27C6853800A28D8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B410CCCB27C6853800A28D8C /* GoogleService-Info.plist */; };
+		B410CD0B27C6D13600A28D8C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410CD0A27C6D13600A28D8C /* LoginViewController.swift */; };
+		B4252C7B27DB2FF4005AA449 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4252C7927DB2FF4005AA449 /* Login.storyboard */; };
+		B43E129127D06EB6008ACD13 /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43E129027D06EB6008ACD13 /* YoutubeViewController.swift */; };
+		B43E129527D2DDF3008ACD13 /* CommutingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43E129427D2DDF3008ACD13 /* CommutingViewController.swift */; };
+		B48774DE27C6E99200E821C4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48774DD27C6E99200E821C4 /* SignUpViewController.swift */; };
+		B48774E027C6ED7300E821C4 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48774DF27C6ED7300E821C4 /* HomePageViewController.swift */; };
+		FAAC06F640D1F5931206912F /* Pods_Mindfulness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940CEBE6EC1F063C136726A7 /* Pods_Mindfulness.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2082D4E468D869EA3A1BF12C /* Pods-Mindfulness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindfulness.release.xcconfig"; path = "Target Support Files/Pods-Mindfulness/Pods-Mindfulness.release.xcconfig"; sourceTree = "<group>"; };
+		5BF40C6727BB20F5000354BC /* Mindfulness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mindfulness.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF40C6A27BB20F5000354BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BF40C6C27BB20F5000354BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5BF40C6E27BB20F5000354BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BF40C7127BB20F5000354BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BF40C7327BB20F9000354BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BF40C7627BB20F9000354BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BF40C7827BB20F9000354BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		940CEBE6EC1F063C136726A7 /* Pods_Mindfulness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mindfulness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4017F6C27C70E1E0070A71B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B410CCCB27C6853800A28D8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B410CD0A27C6D13600A28D8C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B4252C7A27DB2FF4005AA449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		B43E129027D06EB6008ACD13 /* YoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
+		B43E129427D2DDF3008ACD13 /* CommutingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommutingViewController.swift; sourceTree = "<group>"; };
+		B48774DD27C6E99200E821C4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B48774DF27C6ED7300E821C4 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		BC9A6D1DEB29D751A32DE4B1 /* Pods-Mindfulness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindfulness.debug.xcconfig"; path = "Target Support Files/Pods-Mindfulness/Pods-Mindfulness.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BF40C6427BB20F5000354BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4017F6327C701FE0070A71B /* FirebaseDatabaseSwift-Beta in Frameworks */,
+				B4017F6127C701FE0070A71B /* FirebaseDatabase in Frameworks */,
+				B4017F6927C701FE0070A71B /* FirebaseStorage in Frameworks */,
+				B4017F5D27C701FE0070A71B /* FirebaseAnalyticsSwift-Beta in Frameworks */,
+				B4017F5B27C701FE0070A71B /* FirebaseAnalytics in Frameworks */,
+				B4017F6B27C701FE0070A71B /* FirebaseStorageSwift-Beta in Frameworks */,
+				FAAC06F640D1F5931206912F /* Pods_Mindfulness.framework in Frameworks */,
+				B4017F6727C701FE0070A71B /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				B4017F5F27C701FE0070A71B /* FirebaseAuth in Frameworks */,
+				B4017F6527C701FE0070A71B /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BF40C5E27BB20F5000354BC = {
+			isa = PBXGroup;
+			children = (
+				5BF40C6927BB20F5000354BC /* Mindfulness */,
+				5BF40C6827BB20F5000354BC /* Products */,
+				6F36A4AC00871AFEDE918060 /* Pods */,
+				CBD54032D546A0CD8640E472 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5BF40C6827BB20F5000354BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BF40C6727BB20F5000354BC /* Mindfulness.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BF40C6927BB20F5000354BC /* Mindfulness */ = {
+			isa = PBXGroup;
+			children = (
+				B410CD0C27C6D15E00A28D8C /* ViewControllers  */,
+				B410CCCB27C6853800A28D8C /* GoogleService-Info.plist */,
+				5BF40C6A27BB20F5000354BC /* AppDelegate.swift */,
+				5BF40C6C27BB20F5000354BC /* SceneDelegate.swift */,
+				5BF40C7E27BB2A5B000354BC /* Views */,
+				5BF40C7327BB20F9000354BC /* Assets.xcassets */,
+				5BF40C7527BB20F9000354BC /* LaunchScreen.storyboard */,
+				5BF40C7827BB20F9000354BC /* Info.plist */,
+				B4017F6C27C70E1E0070A71B /* Constants.swift */,
+			);
+			path = Mindfulness;
+			sourceTree = "<group>";
+		};
+		5BF40C7E27BB2A5B000354BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4252C7927DB2FF4005AA449 /* Login.storyboard */,
+				5BF40C7027BB20F5000354BC /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6F36A4AC00871AFEDE918060 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC9A6D1DEB29D751A32DE4B1 /* Pods-Mindfulness.debug.xcconfig */,
+				2082D4E468D869EA3A1BF12C /* Pods-Mindfulness.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B410CD0C27C6D15E00A28D8C /* ViewControllers  */ = {
+			isa = PBXGroup;
+			children = (
+				B43E129027D06EB6008ACD13 /* YoutubeViewController.swift */,
+				B43E129427D2DDF3008ACD13 /* CommutingViewController.swift */,
+				B48774DF27C6ED7300E821C4 /* HomePageViewController.swift */,
+				5BF40C6E27BB20F5000354BC /* ViewController.swift */,
+				B48774DD27C6E99200E821C4 /* SignUpViewController.swift */,
+				B410CD0A27C6D13600A28D8C /* LoginViewController.swift */,
+			);
+			path = "ViewControllers ";
+			sourceTree = "<group>";
+		};
+		CBD54032D546A0CD8640E472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				940CEBE6EC1F063C136726A7 /* Pods_Mindfulness.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BF40C6627BB20F5000354BC /* Mindfulness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BF40C7B27BB20F9000354BC /* Build configuration list for PBXNativeTarget "Mindfulness" */;
+			buildPhases = (
+				C9C9F9E5A9F8A87DC9728946 /* [CP] Check Pods Manifest.lock */,
+				5BF40C6327BB20F5000354BC /* Sources */,
+				5BF40C6427BB20F5000354BC /* Frameworks */,
+				5BF40C6527BB20F5000354BC /* Resources */,
+				5EF1860C72ABF7721065D197 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mindfulness;
+			packageProductDependencies = (
+				B4017F5A27C701FE0070A71B /* FirebaseAnalytics */,
+				B4017F5C27C701FE0070A71B /* FirebaseAnalyticsSwift-Beta */,
+				B4017F5E27C701FE0070A71B /* FirebaseAuth */,
+				B4017F6027C701FE0070A71B /* FirebaseDatabase */,
+				B4017F6227C701FE0070A71B /* FirebaseDatabaseSwift-Beta */,
+				B4017F6427C701FE0070A71B /* FirebaseFirestore */,
+				B4017F6627C701FE0070A71B /* FirebaseFirestoreSwift-Beta */,
+				B4017F6827C701FE0070A71B /* FirebaseStorage */,
+				B4017F6A27C701FE0070A71B /* FirebaseStorageSwift-Beta */,
+			);
+			productName = Mindfulness;
+			productReference = 5BF40C6727BB20F5000354BC /* Mindfulness.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BF40C5F27BB20F5000354BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					5BF40C6627BB20F5000354BC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 5BF40C6227BB20F5000354BC /* Build configuration list for PBXProject "Mindfulness" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BF40C5E27BB20F5000354BC;
+			packageReferences = (
+				B4017F5927C701FD0070A71B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 5BF40C6827BB20F5000354BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BF40C6627BB20F5000354BC /* Mindfulness */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BF40C6527BB20F5000354BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF40C7727BB20F9000354BC /* LaunchScreen.storyboard in Resources */,
+				B410CCCC27C6853800A28D8C /* GoogleService-Info.plist in Resources */,
+				5BF40C7427BB20F9000354BC /* Assets.xcassets in Resources */,
+				B4252C7B27DB2FF4005AA449 /* Login.storyboard in Resources */,
+				5BF40C7227BB20F5000354BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EF1860C72ABF7721065D197 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mindfulness/Pods-Mindfulness-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mindfulness/Pods-Mindfulness-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mindfulness/Pods-Mindfulness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9C9F9E5A9F8A87DC9728946 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mindfulness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BF40C6327BB20F5000354BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF40C6F27BB20F5000354BC /* ViewController.swift in Sources */,
+				5BF40C6B27BB20F5000354BC /* AppDelegate.swift in Sources */,
+				B43E129527D2DDF3008ACD13 /* CommutingViewController.swift in Sources */,
+				B43E129127D06EB6008ACD13 /* YoutubeViewController.swift in Sources */,
+				B48774E027C6ED7300E821C4 /* HomePageViewController.swift in Sources */,
+				B410CD0B27C6D13600A28D8C /* LoginViewController.swift in Sources */,
+				B4017F6D27C70E1E0070A71B /* Constants.swift in Sources */,
+				5BF40C6D27BB20F5000354BC /* SceneDelegate.swift in Sources */,
+				B48774DE27C6E99200E821C4 /* SignUpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5BF40C7027BB20F5000354BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BF40C7127BB20F5000354BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5BF40C7527BB20F9000354BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BF40C7627BB20F9000354BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B4252C7927DB2FF4005AA449 /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4252C7A27DB2FF4005AA449 /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BF40C7927BB20F9000354BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BF40C7A27BB20F9000354BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BF40C7C27BB20F9000354BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC9A6D1DEB29D751A32DE4B1 /* Pods-Mindfulness.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mindfulness/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.akapp.Mindfulness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BF40C7D27BB20F9000354BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2082D4E468D869EA3A1BF12C /* Pods-Mindfulness.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mindfulness/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.akapp.Mindfulness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BF40C6227BB20F5000354BC /* Build configuration list for PBXProject "Mindfulness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF40C7927BB20F9000354BC /* Debug */,
+				5BF40C7A27BB20F9000354BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BF40C7B27BB20F9000354BC /* Build configuration list for PBXNativeTarget "Mindfulness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF40C7C27BB20F9000354BC /* Debug */,
+				5BF40C7D27BB20F9000354BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4017F5927C701FD0070A71B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4017F5A27C701FE0070A71B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4017F5927C701FD0070A71B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B4017F5C27C701FE0070A71B /* FirebaseAnalyticsSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4017F5927C701FD0070A71B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAnalyticsSwift-Beta";
+		};
+		B4017F5E27C701FE0070A71B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4017F5927C701FD0070A71B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B4017F6027C701FE0070A71B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4017F5927C701FD0070A71B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		B4017F6227C701FE0070A71B /* FirebaseDatabaseSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4017F5927C701FD0070A71B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseDatabaseSwift-Beta";
+		};
+		B4017F6427C701FE0070A71B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4017F5927C701FD0070A71B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		B4017F6627C701FE0070A71B /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4017F5927C701FD0070A71B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		B4017F6827C701FE0070A71B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4017F5927C701FD0070A71B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		B4017F6A27C701FE0070A71B /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4017F5927C701FD0070A71B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5BF40C5F27BB20F5000354BC /* Project object */;
+}

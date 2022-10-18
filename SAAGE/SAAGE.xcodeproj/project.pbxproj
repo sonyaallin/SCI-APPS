@@ -41,6 +41,12 @@
 		17F4AE1327A7806D00595352 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE1227A7806D00595352 /* FirebaseFirestoreSwift-Beta */; };
 		17F4AE1527A7806D00595352 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE1427A7806D00595352 /* FirebaseStorage */; };
 		17F4AE1727A7806D00595352 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE1627A7806D00595352 /* FirebaseStorageSwift-Beta */; };
+		3B84B50A28F91F0D003C498A /* TestFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B84B50928F91F0D003C498A /* TestFormView.swift */; };
+		3B84B50C28F91FA3003C498A /* TestFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B84B50B28F91FA3003C498A /* TestFormModel.swift */; };
+		3B84B50E28FBB8DE003C498A /* TestFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B84B50D28FBB8DE003C498A /* TestFormView.swift */; };
+		3B84B51028FBBA1B003C498A /* TestFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B84B50F28FBBA1B003C498A /* TestFormViewModel.swift */; };
+		3B84B51228FBBC67003C498A /* TestBowelFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B84B51128FBBC67003C498A /* TestBowelFormView.swift */; };
+		3B84B51428FBC9F0003C498A /* TestBladderFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B84B51328FBC9F0003C498A /* TestBladderFormView.swift */; };
 		FB8BE0D62799C54200C8A561 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8BE0D52799C54200C8A561 /* AboutView.swift */; };
 		FB8BE0D82799C6BE00C8A561 /* NavigationMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8BE0D72799C6BE00C8A561 /* NavigationMenuView.swift */; };
 		FB8BE0DA2799C71300C8A561 /* HowToUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8BE0D92799C71300C8A561 /* HowToUseView.swift */; };
@@ -107,6 +113,12 @@
 		179497E727C6FB7C006D8D2A /* Mailgun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mailgun.swift; sourceTree = "<group>"; };
 		179497E927C6FBBB006D8D2A /* PDFSharedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFSharedView.swift; sourceTree = "<group>"; };
 		17F4AE0327A77FD500595352 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B84B50928F91F0D003C498A /* TestFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFormView.swift; sourceTree = "<group>"; };
+		3B84B50B28F91FA3003C498A /* TestFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFormModel.swift; sourceTree = "<group>"; };
+		3B84B50D28FBB8DE003C498A /* TestFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFormView.swift; sourceTree = "<group>"; };
+		3B84B50F28FBBA1B003C498A /* TestFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFormViewModel.swift; sourceTree = "<group>"; };
+		3B84B51128FBBC67003C498A /* TestBowelFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBowelFormView.swift; sourceTree = "<group>"; };
+		3B84B51328FBC9F0003C498A /* TestBladderFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBladderFormView.swift; sourceTree = "<group>"; };
 		FB36C18527ECE03D00619158 /* SAAGE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SAAGE.entitlements; sourceTree = "<group>"; };
 		FB8BE0D52799C54200C8A561 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		FB8BE0D72799C6BE00C8A561 /* NavigationMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMenuView.swift; sourceTree = "<group>"; };
@@ -168,6 +180,7 @@
 		170D1C3E2799378D009E6733 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3B84B50828F91EDA003C498A /* TestFormViews */,
 				17781391279934350042A85D /* ContentView.swift */,
 				FB8BE0D72799C6BE00C8A561 /* NavigationMenuView.swift */,
 				FB8BE0D52799C54200C8A561 /* AboutView.swift */,
@@ -266,6 +279,9 @@
 				FB90F71027BDF4EF00708974 /* TransfersFormView.swift */,
 				FB90F71227BDF52400708974 /* BowelFormView.swift */,
 				FB90F71427C5B64A00708974 /* RespirationFormView.swift */,
+				3B84B50D28FBB8DE003C498A /* TestFormView.swift */,
+				3B84B51128FBBC67003C498A /* TestBowelFormView.swift */,
+				3B84B51328FBC9F0003C498A /* TestBladderFormView.swift */,
 			);
 			path = FormViews;
 			sourceTree = "<group>";
@@ -275,6 +291,7 @@
 			children = (
 				177F08A127B0BA4800DF80D4 /* FormModel.swift */,
 				FB90F71727D851B300708974 /* CuttlyResponseModel.swift */,
+				3B84B50B28F91FA3003C498A /* TestFormModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -292,11 +309,20 @@
 			path = SharingViews;
 			sourceTree = "<group>";
 		};
+		3B84B50828F91EDA003C498A /* TestFormViews */ = {
+			isa = PBXGroup;
+			children = (
+				3B84B50928F91F0D003C498A /* TestFormView.swift */,
+			);
+			path = TestFormViews;
+			sourceTree = "<group>";
+		};
 		FB8BE0DB2799CA1C00C8A561 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				FB8BE0DC2799CA3200C8A561 /* AppViewModel.swift */,
 				177F089E27B0BA1C00DF80D4 /* FormViewModel.swift */,
+				3B84B50F28FBBA1B003C498A /* TestFormViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -482,14 +508,17 @@
 				FB90F70F27BDF4E000708974 /* SpinalCordInjuryFormView.swift in Sources */,
 				177F089F27B0BA1C00DF80D4 /* FormViewModel.swift in Sources */,
 				179497DF27C6F876006D8D2A /* SharingPlanView.swift in Sources */,
+				3B84B51028FBBA1B003C498A /* TestFormViewModel.swift in Sources */,
 				177F089B27B0B95400DF80D4 /* FormView.swift in Sources */,
 				17382A3D279F719C0063FBDE /* VerifyEmailView.swift in Sources */,
+				3B84B50C28F91FA3003C498A /* TestFormModel.swift in Sources */,
 				FB8BE0DA2799C71300C8A561 /* HowToUseView.swift in Sources */,
 				FB90F70927BDF48500708974 /* AutonomicDysreflexiaFormView.swift in Sources */,
 				179497E827C6FB7C006D8D2A /* Mailgun.swift in Sources */,
 				FB90F70D27BDF4C600708974 /* SkinFormView.swift in Sources */,
 				17642E3927DA616B004C1341 /* PDFView.swift in Sources */,
 				FB90F70B27BDF4AD00708974 /* BladderFormView.swift in Sources */,
+				3B84B50E28FBB8DE003C498A /* TestFormView.swift in Sources */,
 				17642E3727DA5F45004C1341 /* PDFPreviewView.swift in Sources */,
 				FB8BE0D82799C6BE00C8A561 /* NavigationMenuView.swift in Sources */,
 				FB8BE0E027A2039800C8A561 /* CarePlanOptionsView.swift in Sources */,
@@ -515,6 +544,9 @@
 				FB90F71127BDF4EF00708974 /* TransfersFormView.swift in Sources */,
 				FB90F71327BDF52400708974 /* BowelFormView.swift in Sources */,
 				177F08A227B0BA4800DF80D4 /* FormModel.swift in Sources */,
+				3B84B50A28F91F0D003C498A /* TestFormView.swift in Sources */,
+				3B84B51228FBBC67003C498A /* TestBowelFormView.swift in Sources */,
+				3B84B51428FBC9F0003C498A /* TestBladderFormView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +708,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SAAGE/Preview Content\"";
+				DEVELOPMENT_TEAM = RSXJXY367U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -688,7 +721,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.uoft.SAAGE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uoft.SAAGE2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -705,6 +738,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SAAGE/Preview Content\"";
+				DEVELOPMENT_TEAM = RSXJXY367U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -717,7 +751,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.uoft.SAAGE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uoft.SAAGE2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

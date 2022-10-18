@@ -18,6 +18,7 @@ class AppViewModel: ObservableObject {
     @Published var showPrivateViews: Bool = false
     @Published var view: NavigationItems = .login
     @Published var formViewModel: FormViewModel = FormViewModel()
+    @Published var testFormViewModel: TestFormViewModel = TestFormViewModel()
     
     init() {
         user = auth.currentUser
@@ -40,7 +41,8 @@ class AppViewModel: ObservableObject {
     func signOut() {
         try? auth.signOut()
         self.checkAuth()
-        self.formViewModel.cancelPublishers()
+//        self.formViewModel.cancelPublishers()
+        self.testFormViewModel.cancelPublishers()
     }
     
     private func handleSigninAuthResult(authResult: AuthDataResult?, error: Error?) {
@@ -48,8 +50,8 @@ class AppViewModel: ObservableObject {
             self.user = authResult?.user
             self.error = error
             self.checkAuth()
-            
-            self.formViewModel.loadFormData(userId: self.user?.uid)
+            self.testFormViewModel.loadTestFormData(userId: self.user?.uid)
+//            self.formViewModel.loadFormData(userId: self.user?.uid)
         }
     }
     

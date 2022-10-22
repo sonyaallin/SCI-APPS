@@ -24,19 +24,19 @@ struct NewBowelFormView: View {
                 Section(header: Text("Bowel Routine Details")) {
                     VStack(alignment: .leading, spacing: 20) {
                         MultipleChoiceQuestion(
-                            text: Text("Does you spinal cord injury affect your bowel function?"),
+                            text: Text("My question number 1"),
                             options: ["Yes", "No", "I'm not sure"],
-                            selectedOption: $appViewModel.formViewModel.formModel.injuryAffectBowelFunction)
+                            selectedOption: $appViewModel.formViewModel.formModel.newField1)
                     
                         MultipleChoiceQuestion(
-                            text: Text("How often do you do your bowel routine (empty your bowel)?"),
+                            text: Text("My question number 2"),
                             options: ["Every day", "Every other day", "Several times a day", "Other"],
-                            selectedOption: $appViewModel.formViewModel.formModel.bowelRoutineSchedule)
+                            selectedOption: $appViewModel.formViewModel.formModel.newField2)
                         
                         MultipleChoiceQuestion(
-                            text: Text("What time of day do you typically do your bowel routine (empty your bowel)?"),
+                            text: Text("My question number 3"),
                             options: ["Morning", "Evening", "Other"],
-                            selectedOption: $appViewModel.formViewModel.formModel.bowelRoutineTime)
+                            selectedOption: $appViewModel.formViewModel.formModel.newField3)
                     }
                 }
             }

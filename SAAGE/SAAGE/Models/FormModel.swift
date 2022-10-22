@@ -35,6 +35,11 @@ struct FormModel: Codable {
     var bowelRoutineSchedule: String?
     var bowelRoutineTime: String?
     
+    // New Form View
+    var newField1: String?
+    var newField2: String?
+    var newField3: String?
+    
     // Skin Care/Pressure Relief
     var hasPressureSores: String?
     var requireTurningAssistance: String?

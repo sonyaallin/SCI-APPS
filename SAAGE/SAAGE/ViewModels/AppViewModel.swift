@@ -79,6 +79,11 @@ class AppViewModel: ObservableObject {
         
         self.showPrivateViews = self.loggedIn && self.verifiedEmail
         
+        //for debugging
+       self.showPrivateViews = true
+       self.loggedIn = true
+       self.verifiedEmail = true
+        
         if !self.loggedIn {
             self.view = .login
         } else if !self.verifiedEmail {

@@ -8,7 +8,8 @@
 import SwiftUI
 
 enum FormViews: CaseIterable {
-    case basicInfo, spinalCordInjury, autonomicDysreflexia, bladder, bowel, skin, transfers, respiration
+    //case basicInfo, spinalCordInjury, autonomicDysreflexia, bladder, bowel, skin, transfers, respiration
+        case basicInfo, newBowel, newBladder
 }
 
 struct RequiredText: View {
@@ -154,14 +155,17 @@ struct FormView: View {
 extension FormView {
     func containedView() -> AnyView {
         switch formView {
-            case .basicInfo: return AnyView(BasicInfoFormView())
-            case .spinalCordInjury: return AnyView(SpinalCordInjuryFormView())
-            case .autonomicDysreflexia: return AnyView(AutonomicDysreflexiaFormView())
-            case .bladder: return AnyView(BladderFormView())
-            case .bowel: return AnyView(BowelFormView())
-            case .skin: return AnyView(SkinFormView())
-            case .transfers: return AnyView(TransfersFormView())
-            case .respiration: return AnyView(RespirationFormView())
+        case .basicInfo: return AnyView(BasicInfoFormView())
+        case .newBowel: return AnyView(NewBowelFormView())
+        case .newBladder: return AnyView(NewBladderFormView())
+//            case .basicInfo: return AnyView(BasicInfoFormView())
+//            case .spinalCordInjury: return AnyView(SpinalCordInjuryFormView())
+//            case .autonomicDysreflexia: return AnyView(AutonomicDysreflexiaFormView())
+//            case .bladder: return AnyView(BladderFormView())
+//            case .bowel: return AnyView(BowelFormView())
+//            case .skin: return AnyView(SkinFormView())
+//            case .transfers: return AnyView(TransfersFormView())
+//            case .respiration: return AnyView(RespirationFormView())
         }
     }
 }

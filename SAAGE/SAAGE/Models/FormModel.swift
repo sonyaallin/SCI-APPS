@@ -35,6 +35,33 @@ struct FormModel: Codable {
     var bowelRoutineSchedule: String?
     var bowelRoutineTime: String?
     
+    // New Form View
+    var newField1: String?
+    var newField2: String?
+    var newField3: String?
+    
+    // Bowel Management
+    var bowelManagementFrequency: String?
+    var bowelManagementTime: String?
+    var requireSupository: String?
+    var requireMicroEnema: String?
+    var hadColostomy: String?
+    var requireDigitalSimulation: String?
+    var requireManualDisimpaction: String?
+    var otherAssitanceRequest: String = ""
+    var bowelRoutineAssistanceRequest: String = ""
+
+    // Bladder Management
+    var requireIndwellingCatheter: String?
+    var requireCondomCatheter: String?
+    var requireSuprapublicCatheter: String?
+    var requireIntermittentCatheter: String?
+    var requireIlealConduit: String?
+
+    // Cascading Questions for requireIntermittentCatheter
+    var throughYourUrethra: String = ""
+    var throughAbdominalStoma: String?
+    
     // Skin Care/Pressure Relief
     var hasPressureSores: String?
     var requireTurningAssistance: String?

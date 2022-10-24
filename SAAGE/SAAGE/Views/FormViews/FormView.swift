@@ -46,6 +46,45 @@ struct MultipleChoiceQuestion: View {
     }
 }
 
+struct TextQuestion: View {
+    var text: Text
+    @Binding var textField: String
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 5) {
+            text
+                .fixedSize(horizontal: false, vertical: true)
+            TextField("", text: $textField)
+                .padding(5)
+                .border(Color.gray)
+        }.padding(.top, 5)
+    }
+}
+
+struct CascadingMultipleChoice: View {
+    @Binding var originalOption: String?
+    var conditionalAnswer: String
+    var CascadingQuestion: MultipleChoiceQuestion
+    
+    var body: some View {
+        if originalOption == conditionalAnswer {
+            CascadingQuestion
+        }
+    }
+}
+
+struct CascadingText: View {
+    @Binding var originalOption: String?
+    var conditionalAnswer: String
+    var CascadingQuestion: TextQuestion
+    
+    var body: some View {
+        if originalOption == conditionalAnswer {
+            CascadingQuestion
+        }
+    }
+}
+
 struct CheckboxQuestion: View {
     var text: Text
     var options: [String]

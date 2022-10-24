@@ -41,23 +41,34 @@ struct NewBladderFormView: View {
                             text: Text("Do you require a intermittent catheter?"),
                             options: ["Yes", "No"],
                             selectedOption: $appViewModel.formViewModel.formModel.requireIntermittentCatheter)
+                        
+                        CascadingText(
+                            originalOption: $appViewModel.formViewModel.formModel.requireIntermittentCatheter,
+                            conditionalAnswer: "Yes",
+                            CascadingQuestion:
+                                TextQuestion(
+                                    text: Text("Is this through your urethra? (yes, no)"),
+                                    textField: $appViewModel.formViewModel.formModel.throughYourUrethra
+                                )
+                        )
 
-                        VStack(alignment: .leading, spacing: 5) {
-                            Text("Is this through your urethra? (yes, no)")
-                            TextField("", text: $appViewModel.formViewModel.formModel.throughYourUrethra)
-                                .padding(5)
-                                .border(Color.gray)
-                        }.padding(.top, 5)
-
-                        MultipleChoiceQuestion(
-                            text: Text("Is this through an abdominal stoma (mitrofanoff)? "),
-                            options: ["Yes", "No"],
-                            selectedOption: $appViewModel.formViewModel.formModel.throughAbdominalStoma)
+                        CascadingMultipleChoice(
+                            originalOption: $appViewModel.formViewModel.formModel.requireIntermittentCatheter,
+                            conditionalAnswer: "Yes",
+                            CascadingQuestion:
+                                MultipleChoiceQuestion(
+                                    text: Text("Is this through an abdominal stoma (mitrofanoff)? "),
+                                    options: ["Yes", "No"],
+                                    selectedOption: $appViewModel.formViewModel.formModel.throughAbdominalStoma
+                                )
+                        )
 
                         MultipleChoiceQuestion(
                             text: Text("Do you require an ileal conduit/urostomy and collection bag?"),
                             options: ["Yes", "No"],
                             selectedOption: $appViewModel.formViewModel.formModel.requireIlealConduit)
+                        
+                        
                     }
                 }
             }

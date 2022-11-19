@@ -41,6 +41,12 @@
 		17F4AE1327A7806D00595352 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE1227A7806D00595352 /* FirebaseFirestoreSwift-Beta */; };
 		17F4AE1527A7806D00595352 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE1427A7806D00595352 /* FirebaseStorage */; };
 		17F4AE1727A7806D00595352 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 17F4AE1627A7806D00595352 /* FirebaseStorageSwift-Beta */; };
+		3B4CD6882910AFF700378F59 /* NewBasicInfoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CD6872910AFF700378F59 /* NewBasicInfoFormView.swift */; };
+		3B4CD68A2910B7A600378F59 /* NewSCIInfoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CD6892910B7A600378F59 /* NewSCIInfoFormView.swift */; };
+		3B4CD68C2910C54600378F59 /* NewEmergencyInfoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CD68B2910C54600378F59 /* NewEmergencyInfoFormView.swift */; };
+		3B4CD68E2910CDF000378F59 /* MobilityFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CD68D2910CDF000378F59 /* MobilityFormView.swift */; };
+		3B749EDE290838C1001BCCB8 /* NewBowelFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B749EDC290838C1001BCCB8 /* NewBowelFormView.swift */; };
+		3B749EDF290838C1001BCCB8 /* NewBladderFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B749EDD290838C1001BCCB8 /* NewBladderFormView.swift */; };
 		FB8BE0D62799C54200C8A561 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8BE0D52799C54200C8A561 /* AboutView.swift */; };
 		FB8BE0D82799C6BE00C8A561 /* NavigationMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8BE0D72799C6BE00C8A561 /* NavigationMenuView.swift */; };
 		FB8BE0DA2799C71300C8A561 /* HowToUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8BE0D92799C71300C8A561 /* HowToUseView.swift */; };
@@ -107,6 +113,12 @@
 		179497E727C6FB7C006D8D2A /* Mailgun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mailgun.swift; sourceTree = "<group>"; };
 		179497E927C6FBBB006D8D2A /* PDFSharedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFSharedView.swift; sourceTree = "<group>"; };
 		17F4AE0327A77FD500595352 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B4CD6872910AFF700378F59 /* NewBasicInfoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBasicInfoFormView.swift; sourceTree = "<group>"; };
+		3B4CD6892910B7A600378F59 /* NewSCIInfoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSCIInfoFormView.swift; sourceTree = "<group>"; };
+		3B4CD68B2910C54600378F59 /* NewEmergencyInfoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmergencyInfoFormView.swift; sourceTree = "<group>"; };
+		3B4CD68D2910CDF000378F59 /* MobilityFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilityFormView.swift; sourceTree = "<group>"; };
+		3B749EDC290838C1001BCCB8 /* NewBowelFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBowelFormView.swift; sourceTree = "<group>"; };
+		3B749EDD290838C1001BCCB8 /* NewBladderFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBladderFormView.swift; sourceTree = "<group>"; };
 		FB36C18527ECE03D00619158 /* SAAGE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SAAGE.entitlements; sourceTree = "<group>"; };
 		FB8BE0D52799C54200C8A561 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		FB8BE0D72799C6BE00C8A561 /* NavigationMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMenuView.swift; sourceTree = "<group>"; };
@@ -263,9 +275,15 @@
 				FB90F70827BDF48400708974 /* AutonomicDysreflexiaFormView.swift */,
 				FB90F70A27BDF4AD00708974 /* BladderFormView.swift */,
 				FB90F70C27BDF4C600708974 /* SkinFormView.swift */,
+				3B749EDD290838C1001BCCB8 /* NewBladderFormView.swift */,
+				3B749EDC290838C1001BCCB8 /* NewBowelFormView.swift */,
 				FB90F71027BDF4EF00708974 /* TransfersFormView.swift */,
 				FB90F71227BDF52400708974 /* BowelFormView.swift */,
 				FB90F71427C5B64A00708974 /* RespirationFormView.swift */,
+				3B4CD6872910AFF700378F59 /* NewBasicInfoFormView.swift */,
+				3B4CD6892910B7A600378F59 /* NewSCIInfoFormView.swift */,
+				3B4CD68B2910C54600378F59 /* NewEmergencyInfoFormView.swift */,
+				3B4CD68D2910CDF000378F59 /* MobilityFormView.swift */,
 			);
 			path = FormViews;
 			sourceTree = "<group>";
@@ -479,6 +497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B749EDF290838C1001BCCB8 /* NewBladderFormView.swift in Sources */,
 				FB90F70F27BDF4E000708974 /* SpinalCordInjuryFormView.swift in Sources */,
 				177F089F27B0BA1C00DF80D4 /* FormViewModel.swift in Sources */,
 				179497DF27C6F876006D8D2A /* SharingPlanView.swift in Sources */,
@@ -490,8 +509,10 @@
 				FB90F70D27BDF4C600708974 /* SkinFormView.swift in Sources */,
 				17642E3927DA616B004C1341 /* PDFView.swift in Sources */,
 				FB90F70B27BDF4AD00708974 /* BladderFormView.swift in Sources */,
+				3B4CD6882910AFF700378F59 /* NewBasicInfoFormView.swift in Sources */,
 				17642E3727DA5F45004C1341 /* PDFPreviewView.swift in Sources */,
 				FB8BE0D82799C6BE00C8A561 /* NavigationMenuView.swift in Sources */,
+				3B4CD68C2910C54600378F59 /* NewEmergencyInfoFormView.swift in Sources */,
 				FB8BE0E027A2039800C8A561 /* CarePlanOptionsView.swift in Sources */,
 				FB8BE0DD2799CA3200C8A561 /* AppViewModel.swift in Sources */,
 				FB8BE0D62799C54200C8A561 /* AboutView.swift in Sources */,
@@ -511,10 +532,13 @@
 				FB90F70127AF792100708974 /* DeleteConfirmationView.swift in Sources */,
 				179497EA27C6FBBB006D8D2A /* PDFSharedView.swift in Sources */,
 				FB8BE0E227A2064300C8A561 /* MyCarePlanView.swift in Sources */,
+				3B4CD68E2910CDF000378F59 /* MobilityFormView.swift in Sources */,
+				3B749EDE290838C1001BCCB8 /* NewBowelFormView.swift in Sources */,
 				177F089D27B0B9D900DF80D4 /* BasicInfoFormView.swift in Sources */,
 				FB90F71127BDF4EF00708974 /* TransfersFormView.swift in Sources */,
 				FB90F71327BDF52400708974 /* BowelFormView.swift in Sources */,
 				177F08A227B0BA4800DF80D4 /* FormModel.swift in Sources */,
+				3B4CD68A2910B7A600378F59 /* NewSCIInfoFormView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

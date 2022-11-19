@@ -16,6 +16,41 @@ struct FormModel: Codable {
     var height: String = ""
     var weight: String = ""
     var dateOfBirth: String = ""
+    var birthDay: Date = Calendar.current.date(byAdding: DateComponents(year: -40), to: Date()) ?? Date()
+    
+    // Additional basic info
+    var bloodType: String?
+    var healthCardNumber: String = ""
+    var medicAlertID: String = "" // TODO: make it a text area
+    var bloodPressure: String = ""
+    var allergies: String = ""
+    
+    var street: String = ""
+    var unit: String = ""
+    var city: String = ""
+    var province: String?
+    var country: String?
+    var postalCode: String = ""
+    
+    // Emergency contact
+    var contactName: String = ""
+    var contactRelationship: String = ""
+    var contactPhone: String = ""
+    var contactEmail: String = ""
+    
+    // Information about injury
+    var dateInjury = Date()
+    var typeInjury: String?
+    var completenessInjury: String?
+    var levelInjury: String?
+    var causeInjury: String = ""
+    
+    // Additional information about injury and assistance
+    var assistBowel: String?
+    var assistBladder: String?
+    var assistWheelchair: String?
+    var assistTurning: String?
+    var assistEating: String?
     
     // Spinal Cord Injury
     var knowDateOfSpinalCordInjury: String?
@@ -25,6 +60,25 @@ struct FormModel: Codable {
     // Autonomic Dysreflexia (AD)
     var experienceAD: String?
     var symptomsAD = [String]()
+    var otherAD: String = ""
+    var freeTextAD: String = ""
+    
+    // Mobility/Assistive Devices Form
+    var usePoweredWheelchair: String = "No"
+    var modelWheelChair: String = ""
+    var modelWheelchairCharger: String = ""
+    var useManualWheelchair: String = "No"
+    var useElectricScooter: String = "No"
+    var modelScooter: String = ""
+    var modelScooterCharger: String = ""
+    var useCustomWheelchairSeat: String = "No"
+    var useCaneMobility: String = "No"
+    var useCrutches: String = "No"
+    var useWalkerMobility: String = "No"
+    var useAssistiveCommunication: String = "No"
+    var assistiveCommunicationDetails: String = ""
+    var useOtherAssistiveEquipment: String = "No"
+    var otherAssistiveEquipmentDetails: String = ""
     
     // Bladder Management
     var injuryAffectUrinaryFunction: String?
@@ -35,28 +89,25 @@ struct FormModel: Codable {
     var bowelRoutineSchedule: String?
     var bowelRoutineTime: String?
     
-    
     // New Bowel Management
     var bowelManagementFrequency: String?
-    var bowelManagementTime: String?
-    var requireSupository: String?
-    var requireMicroEnema: String?
-    var hadColostomy: String?
-    var requireDigitalSimulation: String?
-    var requireManualDisimpaction: String?
-    var otherAssitanceRequest: String = ""
-    var bowelRoutineAssistanceRequest: String = ""
+    var bowelManagementTime = Date()
+    var requireSupository: String = "No"
+    var requireMicroEnema: String = "No"
+    var hadColostomy: String = "No"
+    var requireDigitalSimulation: String = "No"
+    var requireManualDisimpaction: String = "No"
+    var otherAssitanceRequest: String = "No"
+    var bowelRoutineAssistanceRequest: String = "No"
 
     // New Bladder Management
-    var requireIndwellingCatheter: String?
-    var requireCondomCatheter: String?
-    var requireSuprapublicCatheter: String?
-    var requireIntermittentCatheter: String?
-    var requireIlealConduit: String?
-
-    // Cascading Questions for requireIntermittentCatheter
-    var throughYourUrethra: String = ""
-    var throughAbdominalStoma: String?
+    var requireIndwellingCatheter: String = "No"
+    var requireCondomCatheter: String = "No"
+    var requireSuprapublicCatheter: String = "No"
+    var requireIntermittentCatheter: String = "No"
+    var requireIlealConduit: String = "No"
+    var throughYourUrethra: String = "No"
+    var throughAbdominalStoma: String = "No"
     
     // Skin Care/Pressure Relief
     var hasPressureSores: String?
@@ -69,6 +120,38 @@ struct FormModel: Codable {
     
     // Respiration
     var respirationNeeds: String?
+    
+    // New Respiration
+    var respirationCompromised: String = "No"
+    var dueToInfection: String = "No"
+    var requireVentilator: String = "No"
+//    Compromised assist cough (what does this mean)?
+//    Compromised assist physio (what does this mean)?
+    var havePressureSores: String = "No"
+    var pressureSoresDetails: String = ""
+    var turningRequirementFrequency: String = ""
+    var soresOtherDetails: String = ""
+    
+    var experiencedSkinBreakdwon = "No"
+    var breakdownPositions: String = ""
+    var dressingRequirements: String = ""
+    var turningSchedule: String = ""
+    
+    var limitRangeNeck: String = "No"
+    var limitRangeShoulders: String = "No"
+    var limitRangeArms: String = "No"
+    var limitRangeBack: String = "No"
+    var limitRangeLegs: String = "No"
+    var limitRangeOtherParts: String = "No"
+    var limitRangeOtherPartsExplain: String = ""
+    var otherSkinManagementInfo: String = ""
+    
+    var assistanceWheelchairBed: String = "No"
+    var requireSlidingBoard: String = "No"
+    var requireMechanicalLift: String = "No"
+//    Assistance independent no assist (what does this mean?)
+//    Assistance limited assist (what does this mean?)
+    var otherTransferInfoRespiration: String = ""
 }
 
 #if DEBUG

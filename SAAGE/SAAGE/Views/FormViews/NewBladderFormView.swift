@@ -22,27 +22,23 @@ struct NewBladderFormView: View {
             Form {
                 Section(header: Text("Bowel Routine Details")) {
                     VStack(alignment: .leading, spacing: 20) {
-                        MultipleChoiceQuestion(
+                        ToggleQuestionProposal2(
                             text: Text("Do you require an indwelling catheter?"),
-                            options: ["Yes", "No"],
                             selectedOption: $appViewModel.formViewModel.formModel.requireIndwellingCatheter)
 
-                        MultipleChoiceQuestion(
+                        ToggleQuestionProposal2(
                             text: Text("Do you require an condom catheter?"),
-                            options: ["Yes", "No"],
                             selectedOption: $appViewModel.formViewModel.formModel.requireCondomCatheter)
 
-                        MultipleChoiceQuestion(
+                        ToggleQuestionProposal2(
                             text: Text("Do you require a suprapubic catheter?"),
-                            options: ["Yes", "No"],
                             selectedOption: $appViewModel.formViewModel.formModel.requireSuprapublicCatheter)
 
-                        MultipleChoiceQuestion(
-                            text: Text("Do you require a intermittent catheter?"),
-                            options: ["Yes", "No"],
+                        ToggleQuestionProposal2(
+                            text: Text("Do you require an intermittent catheter?"),
                             selectedOption: $appViewModel.formViewModel.formModel.requireIntermittentCatheter)
                         
-                        CascadingText(
+                        CascadingText2(
                             originalOption: $appViewModel.formViewModel.formModel.requireIntermittentCatheter,
                             conditionalAnswer: "Yes",
                             CascadingQuestion:
@@ -52,20 +48,18 @@ struct NewBladderFormView: View {
                                 )
                         )
 
-                        CascadingMultipleChoice(
+                        CascadingMultipleChoice2(
                             originalOption: $appViewModel.formViewModel.formModel.requireIntermittentCatheter,
                             conditionalAnswer: "Yes",
                             CascadingQuestion:
-                                MultipleChoiceQuestion(
+                                ToggleQuestionProposal2(
                                     text: Text("Is this through an abdominal stoma (mitrofanoff)? "),
-                                    options: ["Yes", "No"],
                                     selectedOption: $appViewModel.formViewModel.formModel.throughAbdominalStoma
                                 )
                         )
 
-                        MultipleChoiceQuestion(
+                        ToggleQuestionProposal2(
                             text: Text("Do you require an ileal conduit/urostomy and collection bag?"),
-                            options: ["Yes", "No"],
                             selectedOption: $appViewModel.formViewModel.formModel.requireIlealConduit)
                         
                         

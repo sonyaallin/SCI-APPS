@@ -38,12 +38,12 @@ struct NewBasicInfoFormView: View {
                                     text: Text("First name:"),
                                     textField: $appViewModel.formViewModel.formModel.firstName
                                 )
-                                
+
                                 TextQuestion(
                                     text: Text("First name:"),
                                     textField: $appViewModel.formViewModel.formModel.lastName
                                 )
-                                
+
                                 VStack(alignment: .leading, spacing: 5) {
                                     RequiredText(text: Text("Email"))
                                     TextField("", text: $appViewModel.formViewModel.formModel.email)
@@ -54,7 +54,7 @@ struct NewBasicInfoFormView: View {
                                         .border(Color.gray)
                                 }  // TODO: make a component that wraps in TextQuestion
                             }
-                            
+
                             VStack(alignment: .leading, spacing: 5) {
                                 DatePicker(
                                     "Date of Birth:",

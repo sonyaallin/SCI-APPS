@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 enum FormViews: CaseIterable {
     //case basicInfo, spinalCordInjury, autonomicDysreflexia, bladder, bowel, skin, transfers, respiration
@@ -205,32 +206,78 @@ extension UISegmentedControl {
     }
 }
 
-struct MultipleChoiceQuestion: View {
-    var text: Text
+class MultipleChoiceModel: ObservableObject {
+    var selectedOption: String?
     var options: [String]
-    @Binding var selectedOption: String?
-    @State private var selectedIndex = 0
+    @Published var selectedIndex: Int
+    
+    init (selectedOption: String?, options: [String]) {
+        self.options = options
+        self.selectedIndex = 0
+    }
+    
+}
+
+struct Hoge: View {
+    var text: Text
+    var observable: MultipleChoiceModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
+            let pickerBinding = Binding<Int>(
+                get: { observable.selectedIndex },
+                set: { observable.selectedIndex = $0 }
+            )
             text
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(10)
-            Picker(selection: $selectedIndex, label: Text(""), content: {
-                ForEach(0..<options.count, content: { index in
-                    Text(options[index]).tag(index).onTapGesture {
-                        if selectedOption == options[index] {
-                            selectedOption = nil
-                        } else {
-                            selectedOption = options[index]
-                        }
-                    }
-                })
+            Picker(selection: pickerBinding, label: Text(""), content: {
+                ForEach(observable.options, id: \.self) {
+                    Text($0).tag(observable.options.firstIndex(of: $0)!)
+                }
             })
             .pickerStyle(SegmentedPickerStyle())
             .clipped()
             .frame(height:50)
             .labelsHidden()
+        }
+    }
+}
+
+struct MultipleChoiceQuestion: View {
+    var text: Text
+    var options: [String]
+    @Binding var selectedOption: String?
+    @State private var selectedIndex = 0
+
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 5) {
+            text
+                .fixedSize(horizontal: false, vertical: true)
+            Picker(selection: $selectedIndex, label: Text("")) {
+                ForEach(options, id: \.self) {
+                    Text($0).tag(self.options.firstIndex(of: $0)!)
+                }
+            }
+            .onChange(of: selectedIndex) { tag in
+                selectedOption = options[tag]
+            }
+//                ForEach(0..<options.count, content: { index in
+//                    Text(options[index]).tag(index).onTapGesture {
+//                        if selectedOption == options[index] {
+//                            selectedOption = nil
+//                        } else {
+//                            selectedOption = options[index]
+//                        }
+//                    }
+//                })
+//            }
+            .pickerStyle(SegmentedPickerStyle())
+            .clipped()
+            .frame(height:50)
+            .labelsHidden()
+            
         }
     }
 }

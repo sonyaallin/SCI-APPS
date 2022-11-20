@@ -206,44 +206,6 @@ extension UISegmentedControl {
     }
 }
 
-class MultipleChoiceModel: ObservableObject {
-    var selectedOption: String?
-    var options: [String]
-    @Published var selectedIndex: Int
-    
-    init (selectedOption: String?, options: [String]) {
-        self.options = options
-        self.selectedIndex = 0
-    }
-    
-}
-
-struct Hoge: View {
-    var text: Text
-    var observable: MultipleChoiceModel
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
-            let pickerBinding = Binding<Int>(
-                get: { observable.selectedIndex },
-                set: { observable.selectedIndex = $0 }
-            )
-            text
-                .fixedSize(horizontal: false, vertical: true)
-                .padding(10)
-            Picker(selection: pickerBinding, label: Text(""), content: {
-                ForEach(observable.options, id: \.self) {
-                    Text($0).tag(observable.options.firstIndex(of: $0)!)
-                }
-            })
-            .pickerStyle(SegmentedPickerStyle())
-            .clipped()
-            .frame(height:50)
-            .labelsHidden()
-        }
-    }
-}
-
 struct MultipleChoiceQuestion: View {
     var text: Text
     var options: [String]
@@ -263,16 +225,6 @@ struct MultipleChoiceQuestion: View {
             .onChange(of: selectedIndex) { tag in
                 selectedOption = options[tag]
             }
-//                ForEach(0..<options.count, content: { index in
-//                    Text(options[index]).tag(index).onTapGesture {
-//                        if selectedOption == options[index] {
-//                            selectedOption = nil
-//                        } else {
-//                            selectedOption = options[index]
-//                        }
-//                    }
-//                })
-//            }
             .pickerStyle(SegmentedPickerStyle())
             .clipped()
             .frame(height:50)
@@ -368,25 +320,46 @@ struct FormView: View {
             }
             
             HStack(spacing: 2) {
-                Spacer()
                 Text("Page:")
-                ForEach(forms.indices) { i in
-                    Button(action: {
-                        print("Clicked page: \(i + 1)")
-                        currentPageIndex = i
-                        formView = forms[i]
-                    }) {
+                Picker(selection: $currentPageIndex, label: Text("")) {
+                    ForEach(forms.indices) { i in
                         i == currentPageIndex ?
                             Text(String(i + 1)).underline()
                         :
                             Text(String(i + 1))
                     }
-                    .padding(3)
-                    .border(Color.blue)
-                    .foregroundColor(i == currentPageIndex ? Color.blue : Color.white)
-                    .background(i == currentPageIndex ? Color.white : Color.blue)
                 }
+                .onChange(of: currentPageIndex) { i in
+                    print("Clicked page: \(i + 1)")
+                    currentPageIndex = i
+                    formView = forms[i]
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                .clipped()
+                .frame(height: 30)
+                .labelsHidden()
             }
+            
+//            HStack(spacing: 2) {
+//                Spacer()
+//                Text("Page:")
+//                ForEach(forms.indices) { i in
+//                    Button(action: {
+//                        print("Clicked page: \(i + 1)")
+//                        currentPageIndex = i
+//                        formView = forms[i]
+//                    }) {
+//                        i == currentPageIndex ?
+//                            Text(String(i + 1)).underline()
+//                        :
+//                            Text(String(i + 1))
+//                    }
+//                    .padding(3)
+//                    .border(Color.blue)
+//                    .foregroundColor(i == currentPageIndex ? Color.blue : Color.white)
+//                    .background(i == currentPageIndex ? Color.white : Color.blue)
+//                }
+//            }
             
             containedView()
             

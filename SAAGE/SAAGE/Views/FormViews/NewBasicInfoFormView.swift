@@ -44,50 +44,38 @@ struct NewBasicInfoFormView: View {
                                     textField: $appViewModel.formViewModel.formModel.lastName
                                 )
 
-                                VStack(alignment: .leading, spacing: 5) {
-                                    RequiredText(text: Text("Email"))
-                                    TextField("", text: $appViewModel.formViewModel.formModel.email)
-                                        .textContentType(.emailAddress)
-                                        .disableAutocorrection(true)
-                                        .autocapitalization(.none)
-                                        .padding(3)
-                                        .border(Color.gray)
-                                }  // TODO: make a component that wraps in TextQuestion
-                            }
-
-                            VStack(alignment: .leading, spacing: 5) {
-                                DatePicker(
-                                    "Date of Birth:",
-                                    selection: $appViewModel.formViewModel.formModel.birthDay,
-                                    displayedComponents: .date
+                                TextQuestion(
+                                    text: Text("Email:"),
+                                    textField: $appViewModel.formViewModel.formModel.email
                                 )
-                                .datePickerStyle(.compact)
                             }
-                            
-                            Group {
-                                VStack(alignment: .leading, spacing: 5) {
-                                    Text("Height (in cm)")
-                                    TextField("", text: $appViewModel.formViewModel.formModel.height)
-                                        .padding(3)
-                                        .border(Color.gray)
-                                }  // validation required
 
-                                VStack(alignment: .leading, spacing: 5) {
-                                    Text("Weight (in cm)")
-                                    TextField("", text: $appViewModel.formViewModel.formModel.weight)
-                                        .padding(3)
-                                        .border(Color.gray)
-                                }  // validation required
+                            
+
+                            Group {
+                                TextQuestionFloatValidation(
+                                    text: Text("Height (in cm)"),
+                                    textField: $appViewModel.formViewModel.formModel.height
+                                )
+                                
+                                TextQuestionFloatValidation(
+                                    text: Text("Weight (in kg)"),
+                                    textField: $appViewModel.formViewModel.formModel.weight
+                                )
 
                                 MultipleChoiceQuestion(
                                     text: Text("Blood type:"),
                                     options: ["A", "B", "AB", "O"],
                                     selectedOption: $appViewModel.formViewModel.formModel.bloodType)
 
-                                TextQuestion(
-                                    text: Text("Date of Birth:"),
-                                    textField: $appViewModel.formViewModel.formModel.dateOfBirth
-                                )  // TODO: make a date picker component
+                                VStack(alignment: .leading, spacing: 5) {
+                                    DatePicker(
+                                        "Date of Birth:",
+                                        selection: $appViewModel.formViewModel.formModel.birthDay,
+                                        displayedComponents: .date
+                                    )
+                                    .datePickerStyle(.compact)
+                                }
 
                                 TextQuestion(
                                     text: Text("Health card number:"),
@@ -99,12 +87,11 @@ struct NewBasicInfoFormView: View {
                                     textField: $appViewModel.formViewModel.formModel.medicAlertID,
                                     height: 100
                                 )
-
-                                TextQuestion(
-                                    text: Text("Blood pressure:"),
+                                
+                                TextQuestionFloatValidation(
+                                    text: Text("Blood pressure"),
                                     textField: $appViewModel.formViewModel.formModel.bloodPressure
                                 )
-                                // TODO: validation required
                             }
                         }
 
@@ -135,7 +122,7 @@ struct NewBasicInfoFormView: View {
 
                             MultipleChoiceQuestion(
                                 text: Text("Country:"),
-                                options: ["Canada", "United States"],
+                                options: ["Canada"],
                                 selectedOption: $appViewModel.formViewModel.formModel.country
                             ) // TODO: make it dynamic
 
@@ -144,7 +131,6 @@ struct NewBasicInfoFormView: View {
                                 textField: $appViewModel.formViewModel.formModel.postalCode
                             )
                         }
-                        
                     }
                 }
             }

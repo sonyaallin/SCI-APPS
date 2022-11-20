@@ -24,28 +24,33 @@ struct RequiredText: View {
     }
 }
 
-//struct MultipleChoiceQuestion: View {
-//    var text: Text
-//    var options: [String]
-//    @Binding var selectedOption: String?
-//
-//    var body: some View {
-//        VStack(alignment: .leading, spacing: 5) {
-//            text
-//                .fixedSize(horizontal: false, vertical: true)
-//            ForEach(options, id: \.self) { option in
-//                Label(option, systemImage: option == selectedOption ? "circle.inset.filled" : "circle")
-//                    .onTapGesture {
-//                        if selectedOption == option {
-//                            selectedOption = nil
-//                        } else {
-//                            selectedOption = option
-//                        }
-//                    }
-//            }
-//        }
-//    }
-//}
+struct TextQuestionFloatValidation: View {
+    var text: Text
+    @Binding var textField: String
+    @State var inputValid: Bool = true
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 5) {
+            HStack{
+                text
+                    .fixedSize(horizontal: false, vertical: true)
+                inputValid ? nil : Text("Please insert a valid number")
+                    .foregroundColor(Color.red)
+            }
+            TextField("", text: $textField)
+                .padding(5)
+                .border(Color.gray)
+                .onChange(of: textField) { newValue in
+                    let testFloat = Float(newValue)
+                    if testFloat == nil && newValue != "" {
+                        inputValid = false
+                    } else {
+                        inputValid = true
+                    }
+                }
+        }.padding(.top, 5)
+    }
+}
 
 struct TextQuestion: View {
     var text: Text
@@ -339,27 +344,6 @@ struct FormView: View {
                 .frame(height: 30)
                 .labelsHidden()
             }
-            
-//            HStack(spacing: 2) {
-//                Spacer()
-//                Text("Page:")
-//                ForEach(forms.indices) { i in
-//                    Button(action: {
-//                        print("Clicked page: \(i + 1)")
-//                        currentPageIndex = i
-//                        formView = forms[i]
-//                    }) {
-//                        i == currentPageIndex ?
-//                            Text(String(i + 1)).underline()
-//                        :
-//                            Text(String(i + 1))
-//                    }
-//                    .padding(3)
-//                    .border(Color.blue)
-//                    .foregroundColor(i == currentPageIndex ? Color.blue : Color.white)
-//                    .background(i == currentPageIndex ? Color.white : Color.blue)
-//                }
-//            }
             
             containedView()
             

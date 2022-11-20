@@ -97,8 +97,8 @@ struct FormModel: Codable {
     var hadColostomy: String = "No"
     var requireDigitalSimulation: String = "No"
     var requireManualDisimpaction: String = "No"
-    var otherAssitanceRequest: String = "No"
-    var bowelRoutineAssistanceRequest: String = "No"
+    var otherAssitanceRequest: String = ""
+    var bowelRoutineAssistanceRequest: String = ""
 
     // New Bladder Management
     var requireIndwellingCatheter: String = "No"

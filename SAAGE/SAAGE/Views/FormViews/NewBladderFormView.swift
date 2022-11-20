@@ -38,13 +38,13 @@ struct NewBladderFormView: View {
                             text: Text("Do you require an intermittent catheter?"),
                             selectedOption: $appViewModel.formViewModel.formModel.requireIntermittentCatheter)
                         
-                        CascadingText2(
+                        CascadingMultipleChoice2(
                             originalOption: $appViewModel.formViewModel.formModel.requireIntermittentCatheter,
                             conditionalAnswer: "Yes",
                             CascadingQuestion:
-                                TextQuestion(
+                                ToggleQuestionProposal2(
                                     text: Text("Is this through your urethra? (yes, no)"),
-                                    textField: $appViewModel.formViewModel.formModel.throughYourUrethra
+                                    selectedOption: $appViewModel.formViewModel.formModel.throughYourUrethra
                                 )
                         )
 

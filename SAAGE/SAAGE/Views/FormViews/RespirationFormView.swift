@@ -12,7 +12,7 @@ struct RespirationFormView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            Text("Respiration Form")
+            Text("Respiration")
                 .font(.subheadline)
                 .fontWeight(.bold)
             Form{

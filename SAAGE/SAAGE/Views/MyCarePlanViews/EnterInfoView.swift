@@ -19,14 +19,14 @@ struct EnterInfoView: View {
             
             VStack(alignment: .leading, spacing: 5) {
                 Text("Your care plan has 8 sections:")
-                Text("•\tAbout me")
-                Text("•\tMy spinal cord injury")
-                Text("•\tAutonomic dysreflexia")
-                Text("•\tBladder")
-                Text("•\tBowel")
-                Text("•\tSkin")
-                Text("•\tTransfers")
+                Text("•\tBasic Information")
+                Text("•\tEmergency Contact")
+                Text("•\tAdditional Personal Information")
+                Text("•\tAutomatic Dysreflexia")
+                Text("•\tMobility/Assistive Devices")
                 Text("•\tRespiration")
+                Text("•\tBowel Management")
+                Text("•\tBladder Management")
             }
             
             Text("Use the sections that are relevant to you. You can return to your care plan any time to add or edit information.")

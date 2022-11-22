@@ -15,7 +15,7 @@ struct NewBowelFormView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            Text("Revised Bowel Management Form")
+            Text("Bowel Management")
                 .font(.subheadline)
                 .fontWeight(.bold)
 

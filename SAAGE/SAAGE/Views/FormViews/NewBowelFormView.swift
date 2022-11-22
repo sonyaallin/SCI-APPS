@@ -24,7 +24,7 @@ struct NewBowelFormView: View {
                     VStack(alignment: .leading, spacing: 20) {
                         MultipleChoiceQuestion  (
                            text: Text("How often do you perform your bowel management routine?"),
-                           options: ["More thanonce a day", "Every 2 days", "Every 3 days", "More than every 3 days"],
+                           options: ["More than once a day", "Every 2 days", "Every 3 days", "More than every 3 days"],
                            selectedOption: $appViewModel.formViewModel.formModel.bowelManagementFrequency)
                         
                         VStack(alignment: .leading, spacing: 5) {

@@ -20,7 +20,7 @@ struct AutonomicDysreflexiaFormView: View {
                 .font(.subheadline)
                 .fontWeight(.bold)
             
-            Text("Autonomic Dysreflexia (AD) is a potentially life threatening rise in blood pressure. It is often caused by pain or a harmful stimulus below the level of injury (full bladder, impacted bowel, pressure sore, bone fracture, etc.). Typically, people with spinal cord injury above the T6 level are affected.")
+            Text("INTRODUCTION\nAutonomic Dysreflexia (AD) is a potentially life threatening rise in blood pressure above your normal (baseline) level. It is often caused by pain or a harmful stimulus below the level of injury (full bladder, impacted bowel, pressure sore, bone fracture, etc.).\nTypically, people with spinal cord injury at or above the T6 level are affected.")
             
             Form {
                 Section(header: Text("Symptoms")) {
@@ -33,13 +33,34 @@ struct AutonomicDysreflexiaFormView: View {
                         CheckboxQuestion(
                             text: Text("What symptoms of autonomic dysreflexia do you experience? (check all that apply)"),
                             options: [
-                                "Pounding headached",
                                 "Blushing/flushed skin",
+                                "Pounding headached",
                                 "Sweating",
                                 "Goosebumps",
-                                "Shivering"
+                                "Shivering",
+                                "Agitation",
+                                "Nasal Stiffness",
+                                "Other"
                             ],
-                            selectedOptions: $appViewModel.formViewModel.formModel.symptomsAD)
+                            selectedOptions: $appViewModel.formViewModel.formModel.symptomsAD
+                        )
+                        
+                        CascadingTextToCheckbox(
+                            originalOption: $appViewModel.formViewModel.formModel.symptomsAD,
+                            conditionalAnswer: "Other",
+                            CascadingQuestion:
+                                TextQuestion(
+                                    text: Text("If you answered \"other,\" you can add details here:"),
+                                    textField: $appViewModel.formViewModel.formModel.otherAD
+                                )
+                        )
+                        
+                        TextQuestion(
+                            text: Text("Feel free to provide more information:"),
+                            textField: $appViewModel.formViewModel.formModel.freeTextAD,
+                            height: 100
+                        )
+                        
                     }
                 }
             }

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "63E13485-1082-4EF3-B913-089B61ADF7F0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3BAF1ED-F820-4565-A25F-EC9CAF776762"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SAAGE/ViewModels/AppViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "AppViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "C3BAF1ED-F820-4565-A25F-EC9CAF776762 - 45400d4cd8522a8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of SAAGE.AppViewModel.verifiedEmail : Swift.Bool"
+                  moduleName = "SAAGE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tairi/Development/SCI-APPS/SAAGE/SAAGE/ViewModels/AppViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "C3BAF1ED-F820-4565-A25F-EC9CAF776762 - dac2e8fe27a837e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAAGE.AppViewModel.verifiedEmail.getter : Swift.Bool"
+                  moduleName = "SAAGE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tairi/Development/SCI-APPS/SAAGE/SAAGE/ViewModels/AppViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "C3BAF1ED-F820-4565-A25F-EC9CAF776762 - e9eef5321f85dff5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAAGE.AppViewModel.verifiedEmail.setter : Swift.Bool"
+                  moduleName = "SAAGE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tairi/Development/SCI-APPS/SAAGE/SAAGE/ViewModels/AppViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "C3BAF1ED-F820-4565-A25F-EC9CAF776762 - 88a4b8c427d8dde4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAAGE.AppViewModel.verifiedEmail.modify : Swift.Bool"
+                  moduleName = "SAAGE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tairi/Development/SCI-APPS/SAAGE/SAAGE/ViewModels/AppViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "C3BAF1ED-F820-4565-A25F-EC9CAF776762 - 9f1440b93dede3f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAAGE.AppViewModel.verifiedEmail.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SAAGE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tairi/Development/SCI-APPS/SAAGE/SAAGE/ViewModels/AppViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "C3BAF1ED-F820-4565-A25F-EC9CAF776762 - a6b2a2d0b5fb81de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAAGE.AppViewModel.$verifiedEmail.getter : Combine.Published&lt;Swift.Bool&gt;.Publisher"
+                  moduleName = "SAAGE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tairi/Development/SCI-APPS/SAAGE/SAAGE/ViewModels/AppViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "C3BAF1ED-F820-4565-A25F-EC9CAF776762 - 6e7a4dbdcc5d5d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAAGE.AppViewModel.$verifiedEmail.setter : Combine.Published&lt;Swift.Bool&gt;.Publisher"
+                  moduleName = "SAAGE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tairi/Development/SCI-APPS/SAAGE/SAAGE/ViewModels/AppViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "C3BAF1ED-F820-4565-A25F-EC9CAF776762 - ea8d07262fb0695f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAAGE.AppViewModel.$verifiedEmail.modify : Combine.Published&lt;Swift.Bool&gt;.Publisher"
+                  moduleName = "SAAGE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tairi/Development/SCI-APPS/SAAGE/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "C3BAF1ED-F820-4565-A25F-EC9CAF776762 - 75cf1e4c0204d3a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAAGE.AppViewModel.$verifiedEmail.modify : Combine.Published&lt;Swift.Bool&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SAAGE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tairi/Development/SCI-APPS/SAAGE/SAAGE/ViewModels/AppViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "C3BAF1ED-F820-4565-A25F-EC9CAF776762 - 6293a150d6afd6aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SAAGE.AppViewModel.init() -&gt; SAAGE.AppViewModel"
+                  moduleName = "SAAGE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tairi/Development/SCI-APPS/SAAGE/SAAGE/ViewModels/AppViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "684">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F96706E8-B3F7-4DCB-BA30-B28461F331A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SAAGE/Views/FormViews/RespirationFormView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

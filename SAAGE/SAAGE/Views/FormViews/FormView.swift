@@ -259,13 +259,14 @@ struct CheckboxStyle: ToggleStyle {
     @State private var selection = false
     
     func makeBody(configuration: Configuration) -> some View {
+        var isTrueSelected = selectedOption == trueOption
         return HStack {
             configuration.label
             Spacer()
-            Image(systemName: configuration.isOn ? "checkmark.circle.fill" : "circle")
+            Image(systemName: isTrueSelected ? "checkmark.circle.fill" : "circle")
                 .resizable()
                 .frame(width: 36, height: 36)
-                .foregroundColor(configuration.isOn ? .green : .gray)
+                .foregroundColor(isTrueSelected ? .green : .gray)
                 .font(.system(size: 20, weight: .bold, design: .default))
                 .onTapGesture {
                     selection = !selection
@@ -287,7 +288,7 @@ struct ToggleQuestionProposal1: View {
         VStack(alignment: .leading, spacing: 10) {
             text
             Toggle(isOn: $selection) {
-                Text(selection ? trueOption : falseOption)
+                Text(selectedOption == trueOption ? trueOption : falseOption)
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }
             .toggleStyle(CheckboxStyle(trueOption: trueOption, falseOption: falseOption, selectedOption: $selectedOption))
@@ -300,19 +301,20 @@ struct ToggleQuestionProposal2: View {
     var trueOption: String = "Yes"
     var falseOption: String = "No"
     @Binding var selectedOption: String
-    @State private var selection = false
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        HStack(spacing: 10) {
             text
-            Toggle(isOn: $selection) {
-                Text(selection ? trueOption : falseOption)
+                .padding(5)
+            Toggle(isOn: Binding<Bool>(get: {return selectedOption == trueOption},
+                                       set: { _ in selectedOption == trueOption })) {
+                Text(selectedOption == trueOption ? trueOption : falseOption)
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }
             .onTapGesture {
-                print("tapped")
-                selectedOption = selection ? falseOption : trueOption
+                selectedOption = selectedOption == trueOption ? falseOption : trueOption
             }
+            .padding(5)
         }
     }
 }

@@ -28,6 +28,8 @@ struct TextQuestionFloatValidation: View {
     var text: Text
     @Binding var textField: String
     @State var inputValid: Bool = true
+    var lowerLimit: Float = -1
+    var upperLimit: Float = -1
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
@@ -41,10 +43,20 @@ struct TextQuestionFloatValidation: View {
                 .padding(5)
                 .border(Color.gray)
                 .onChange(of: textField) { newValue in
+                    let useLimits = lowerLimit >= 0 && upperLimit >= 0
+                    let infinity = Float.greatestFiniteMagnitude
                     let testFloat = Float(newValue)
                     if testFloat == nil && newValue != "" {
                         inputValid = false
-                    } else {
+                    }
+                    else if useLimits{
+                        if newValue == "" || testFloat != nil && lowerLimit <= testFloat ?? -1 && testFloat ?? infinity <= upperLimit {
+                            inputValid = true
+                        } else {
+                            inputValid = false
+                        }
+                    }
+                    else {
                         inputValid = true
                     }
                 }
@@ -399,13 +411,6 @@ extension FormView {
         case .autonomicDysreflexia: return AnyView(AutonomicDysreflexiaFormView())
         case .mobility: return AnyView(MobilityFormView())
         case .respiration: return AnyView(RespirationFormView())
-//            case .basicInfo: return AnyView(BasicInfoFormView())
-//            case .spinalCordInjury: return AnyView(SpinalCordInjuryFormView())
-           
-//            case .bladder: return AnyView(BladderFormView())
-//            case .bowel: return AnyView(BowelFormView())
-//            case .skin: return AnyView(SkinFormView())
-//            case .transfers: return AnyView(TransfersFormView())
         }
     }
 }

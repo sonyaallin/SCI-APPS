@@ -55,12 +55,16 @@ struct NewBasicInfoFormView: View {
                             Group {
                                 TextQuestionFloatValidation(
                                     text: Text("Height (in cm)"),
-                                    textField: $appViewModel.formViewModel.formModel.height
+                                    textField: $appViewModel.formViewModel.formModel.height,
+                                    lowerLimit: 0,
+                                    upperLimit: 300
                                 )
                                 
                                 TextQuestionFloatValidation(
                                     text: Text("Weight (in kg)"),
-                                    textField: $appViewModel.formViewModel.formModel.weight
+                                    textField: $appViewModel.formViewModel.formModel.weight,
+                                    lowerLimit: 0,
+                                    upperLimit: 300
                                 )
 
                                 MultipleChoiceQuestion(
@@ -90,7 +94,9 @@ struct NewBasicInfoFormView: View {
                                 
                                 TextQuestionFloatValidation(
                                     text: Text("Blood pressure"),
-                                    textField: $appViewModel.formViewModel.formModel.bloodPressure
+                                    textField: $appViewModel.formViewModel.formModel.bloodPressure,
+                                    lowerLimit: 0,
+                                    upperLimit: 300
                                 )
                             }
                         }

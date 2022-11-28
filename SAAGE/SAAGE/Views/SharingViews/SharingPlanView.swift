@@ -118,6 +118,7 @@ extension SharingPlanView {
         print("Adding basic info")
         
         let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM dd, YYYY"
         let birthDayStr = dateFormatter.string(from: form.birthDay)
         
         document.add(.contentLeft, text: "Basic Information")

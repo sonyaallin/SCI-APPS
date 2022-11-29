@@ -61,7 +61,7 @@ struct SharingPlanView: View {
                         .onTapGesture {
                             toggleSection(section: .emergencyContact)
                         }
-                    Label("Additional information", systemImage: chosenSections.contains(.aboutMySci) ? "checkmark.square" : "square")
+                    Label("Spinal Cord Injury Information", systemImage: chosenSections.contains(.aboutMySci) ? "checkmark.square" : "square")
                         .onTapGesture {
                             toggleSection(section: .aboutMySci)
                         }
@@ -130,7 +130,7 @@ extension SharingPlanView {
         document.add(text: String(format: "Height: %@", form.height))
         document.add(text: String(format: "Weight: %@", form.weight))
         document.add(text: String(format: "Date of birth: %@", birthDayStr))
-        document.add(text: String(format: "Blood Type: %@", form.bloodType ?? "A"))
+        document.add(text: String(format: "Blood Type: %@", form.bloodType ))
         document.add(text: String(format: "Health Card Number: %@", form.healthCardNumber))
         document.add(text: String(format: "Medical Alert ID: %@", form.medicAlertID))
         document.add(text: String(format: "Blood Pressure: %@", form.bloodPressure))
@@ -138,8 +138,8 @@ extension SharingPlanView {
         document.add(text: String(format: "Street: %@", form.street))
         document.add(text: String(format: "Unit: %@", form.unit))
         document.add(text: String(format: "City: %@", form.city))
-        document.add(text: String(format: "Province: %@", form.province ?? "ON"))
-        document.add(text: String(format: "Country: %@", form.country ?? "Canada"))
+        document.add(text: String(format: "Province: %@", form.province ))
+        document.add(text: String(format: "Country: %@", form.country ))
         document.add(text: String(format: "Postal Code: %@", form.postalCode))
         document.add(text: "\n")
     }
@@ -169,15 +169,15 @@ extension SharingPlanView {
         document.add(text: "\n")
         
         document.add(text: String(format: "Date of your spinal code injury: %@", dateInjuryStr))
-        document.add(text: String(format: "Type of injury: %@", form.typeInjury ?? "Traumatic"))
-        document.add(text: String(format: "Completeness of injury: %@", form.completenessInjury ?? "Complete"))
-        document.add(text: String(format: "Level of injury: %@", form.levelInjury ?? "Light"))
+        document.add(text: String(format: "Type of injury: %@", form.typeInjury ))
+        document.add(text: String(format: "Completeness of injury: %@", form.completenessInjury ))
+        document.add(text: String(format: "Level of injury: %@", form.levelInjury ))
         document.add(text: String(format: "Cause of injury: %@", form.causeInjury))
-        document.add(text: String(format: "Require assitance managing bladder routine: %@", form.assistBowel ?? "Yes"))
-        document.add(text: String(format: "Require assistance managing bladder routine: %@", form.assistBladder ?? "Yes"))
-        document.add(text: String(format: "Require assistance tranferring to/from wheelchair: %@", form.assistWheelchair ?? "Yes"))
-        document.add(text: String(format: "Require assistance turing: %@", form.assistTurning ?? "Yes"))
-        document.add(text: String(format: "Require assistance eating: %@", form.assistEating ?? "Yes"))
+        document.add(text: String(format: "Require assitance managing bladder routine: %@", form.assistBowel ))
+        document.add(text: String(format: "Require assistance managing bladder routine: %@", form.assistBladder ))
+        document.add(text: String(format: "Require assistance tranferring to/from wheelchair: %@", form.assistWheelchair ))
+        document.add(text: String(format: "Require assistance turing: %@", form.assistTurning ))
+        document.add(text: String(format: "Require assistance eating: %@", form.assistEating ))
         document.add(text: "\n")
     }
     
@@ -188,7 +188,7 @@ extension SharingPlanView {
         document.addLineSeparator(PDFContainer.contentLeft, style: .init(type: .full, color: .darkGray, width: 0.5))
         document.add(text: "\n")
         
-        document.add(text: String(format: "Experiences AD: %@", form.experienceAD ?? ""))
+        document.add(text: String(format: "Experiences AD: %@", form.experienceAD ))
         document.add(text: "Symptoms:")
         if form.symptomsAD.count == 0 {
             document.add(text: "N/A")
@@ -292,7 +292,7 @@ extension SharingPlanView {
         let dateFormatter = DateFormatter()
         let bowelManagementTime = dateFormatter.string(from: form.bowelManagementTime)
 
-        document.add(text: String(format: "Frequency of bowel management: %@", form.bowelManagementFrequency ?? "More than once a day"))
+        document.add(text: String(format: "Frequency of bowel management: %@", form.bowelManagementFrequency))
         document.add(text: String(format: "Bowel management time: %@", bowelManagementTime))
         document.add(text: String(format: "Require supository: %@", form.requireSupository))
         document.add(text: String(format: "Require micro enema: %@", form.requireMicroEnema))

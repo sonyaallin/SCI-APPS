@@ -215,7 +215,7 @@ struct CheckboxQuestion: View {
     }
 }
 
-// Enable scaling up a toggle's height
+// Enable scaling up a SegmentedPicker's height
 extension UISegmentedControl {
     override open func didMoveToSuperview() {
         super.didMoveToSuperview()
@@ -226,21 +226,20 @@ extension UISegmentedControl {
 struct MultipleChoiceQuestion: View {
     var text: Text
     var options: [String]
-    @Binding var selectedOption: String?
-    @State private var selectedIndex = 0
-
+    @Binding var selectedOption: String
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             text
                 .fixedSize(horizontal: false, vertical: true)
-            Picker(selection: $selectedIndex, label: Text("")) {
+                .padding(5)
+            Picker(selection: $selectedOption, label: Text("")) {
                 ForEach(options, id: \.self) {
                     Text($0).tag(self.options.firstIndex(of: $0)!)
                 }
             }
-            .onChange(of: selectedIndex) { tag in
-                selectedOption = options[tag]
+            .onChange(of: selectedOption) { tag in
+                selectedOption = options[self.options.firstIndex(of: tag) ?? 0]
             }
             .pickerStyle(SegmentedPickerStyle())
             .clipped()
@@ -259,7 +258,7 @@ struct CheckboxStyle: ToggleStyle {
     @State private var selection = false
     
     func makeBody(configuration: Configuration) -> some View {
-        var isTrueSelected = selectedOption == trueOption
+        let isTrueSelected = selectedOption == trueOption
         return HStack {
             configuration.label
             Spacer()
@@ -285,8 +284,9 @@ struct ToggleQuestionProposal1: View {
     @State private var selection = false
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        HStack(spacing: 10) {
             text
+                .padding(5)
             Toggle(isOn: $selection) {
                 Text(selectedOption == trueOption ? trueOption : falseOption)
                     .frame(maxWidth: .infinity, alignment: .trailing)

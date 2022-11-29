@@ -21,7 +21,7 @@ struct EnterInfoView: View {
                 Text("Your care plan has 8 sections:")
                 Text("•\tBasic Information")
                 Text("•\tEmergency Contact")
-                Text("•\tAdditional Personal Information")
+                Text("•\tSpinal Cord Injury Information")
                 Text("•\tAutomatic Dysreflexia")
                 Text("•\tMobility/Assistive Devices")
                 Text("•\tRespiration")

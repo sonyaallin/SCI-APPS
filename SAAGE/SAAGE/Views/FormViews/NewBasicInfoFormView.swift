@@ -121,7 +121,7 @@ struct NewBasicInfoFormView: View {
                                 textField: $appViewModel.formViewModel.formModel.street
                             )
 
-                            MultipleChoiceQuestion(
+                            DropdownQuestion(
                                 text: Text("Province:"),
                                 options: ["ON", "QC", "NS", "NB", "MB", "BC", "PE", "SK", "AB", "NL"],
                                 selectedOption: $appViewModel.formViewModel.formModel.province)

@@ -27,7 +27,7 @@ struct AutonomicDysreflexiaFormView: View {
                     VStack(alignment: .leading, spacing: 20) {
                         MultipleChoiceQuestion(
                             text: Text("Do you experience autonomic dysreflexia?"),
-                            options: ["Yes", "No", "I'm not sure"],
+                            options: ["Yes", "No", "Not sure"],
                             selectedOption: $appViewModel.formViewModel.formModel.experienceAD)
                         
                         CheckboxQuestion(

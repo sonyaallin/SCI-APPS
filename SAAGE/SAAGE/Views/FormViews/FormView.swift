@@ -223,6 +223,32 @@ extension UISegmentedControl {
     }
 }
 
+struct DropdownQuestion: View {
+    var text: Text
+    var options: [String]
+    @Binding var selectedOption: String
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 5) {
+            text
+                .fixedSize(horizontal: false, vertical: true)
+                .padding(5)
+            Picker(selection: $selectedOption, label: Text("")) {
+                ForEach(options, id: \.self) {
+                    Text($0).tag(self.options.firstIndex(of: $0)!)
+                }
+            }
+            .onChange(of: selectedOption) { tag in
+                selectedOption = options[self.options.firstIndex(of: tag) ?? 0]
+            }
+            .clipped()
+            .frame(height:50)
+            .labelsHidden()
+            
+        }
+    }
+}
+
 struct MultipleChoiceQuestion: View {
     var text: Text
     var options: [String]

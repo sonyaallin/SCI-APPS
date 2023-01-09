@@ -13,12 +13,12 @@ struct NewSCIInfoFormView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            Text("Additional Personal Information")
+            Text("Spinal Cord Injury Information")
                 .font(.subheadline)
                 .fontWeight(.bold)
             
             Form {
-                Section(header: Text("Additional Information")) {
+                Section(header: Text("Spinal Cord Injury Information")) {
                     VStack(alignment: .leading, spacing: 20) {
                         Group {
                             VStack(alignment: .leading, spacing: 5) {
@@ -28,6 +28,7 @@ struct NewSCIInfoFormView: View {
                                     displayedComponents: [.date]
                                 )
                                 .datePickerStyle(.compact)
+                                .padding(5)
                             }
                             
                             MultipleChoiceQuestion(

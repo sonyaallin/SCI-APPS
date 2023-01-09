@@ -22,7 +22,7 @@ struct NewBowelFormView: View {
             Form {
                 Section(header: Text("Bowel Routine Details")) {
                     VStack(alignment: .leading, spacing: 20) {
-                        MultipleChoiceQuestion  (
+                        DropdownQuestion  (
                            text: Text("How often do you perform your bowel management routine?"),
                            options: ["More than once a day", "Every 2 days", "Every 3 days", "More than every 3 days"],
                            selectedOption: $appViewModel.formViewModel.formModel.bowelManagementFrequency)

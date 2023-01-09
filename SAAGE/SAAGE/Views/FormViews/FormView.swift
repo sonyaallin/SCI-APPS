@@ -28,6 +28,8 @@ struct TextQuestionFloatValidation: View {
     var text: Text
     @Binding var textField: String
     @State var inputValid: Bool = true
+    var lowerLimit: Float = -1
+    var upperLimit: Float = -1
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
@@ -41,10 +43,20 @@ struct TextQuestionFloatValidation: View {
                 .padding(5)
                 .border(Color.gray)
                 .onChange(of: textField) { newValue in
+                    let useLimits = lowerLimit >= 0 && upperLimit >= 0
+                    let infinity = Float.greatestFiniteMagnitude
                     let testFloat = Float(newValue)
                     if testFloat == nil && newValue != "" {
                         inputValid = false
-                    } else {
+                    }
+                    else if useLimits{
+                        if newValue == "" || testFloat != nil && lowerLimit <= testFloat ?? -1 && testFloat ?? infinity <= upperLimit {
+                            inputValid = true
+                        } else {
+                            inputValid = false
+                        }
+                    }
+                    else {
                         inputValid = true
                     }
                 }
@@ -203,7 +215,7 @@ struct CheckboxQuestion: View {
     }
 }
 
-// Enable scaling up a toggle's height
+// Enable scaling up a SegmentedPicker's height
 extension UISegmentedControl {
     override open func didMoveToSuperview() {
         super.didMoveToSuperview()
@@ -211,24 +223,49 @@ extension UISegmentedControl {
     }
 }
 
-struct MultipleChoiceQuestion: View {
+struct DropdownQuestion: View {
     var text: Text
     var options: [String]
-    @Binding var selectedOption: String?
-    @State private var selectedIndex = 0
-
+    @Binding var selectedOption: String
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             text
                 .fixedSize(horizontal: false, vertical: true)
-            Picker(selection: $selectedIndex, label: Text("")) {
+                .padding(5)
+            Picker(selection: $selectedOption, label: Text("")) {
                 ForEach(options, id: \.self) {
                     Text($0).tag(self.options.firstIndex(of: $0)!)
                 }
             }
-            .onChange(of: selectedIndex) { tag in
-                selectedOption = options[tag]
+            .onChange(of: selectedOption) { tag in
+                selectedOption = options[self.options.firstIndex(of: tag) ?? 0]
+            }
+            .clipped()
+            .frame(height:50)
+            .labelsHidden()
+            
+        }
+    }
+}
+
+struct MultipleChoiceQuestion: View {
+    var text: Text
+    var options: [String]
+    @Binding var selectedOption: String
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 5) {
+            text
+                .fixedSize(horizontal: false, vertical: true)
+                .padding(5)
+            Picker(selection: $selectedOption, label: Text("")) {
+                ForEach(options, id: \.self) {
+                    Text($0).tag(self.options.firstIndex(of: $0)!)
+                }
+            }
+            .onChange(of: selectedOption) { tag in
+                selectedOption = options[self.options.firstIndex(of: tag) ?? 0]
             }
             .pickerStyle(SegmentedPickerStyle())
             .clipped()
@@ -247,13 +284,14 @@ struct CheckboxStyle: ToggleStyle {
     @State private var selection = false
     
     func makeBody(configuration: Configuration) -> some View {
+        let isTrueSelected = selectedOption == trueOption
         return HStack {
             configuration.label
             Spacer()
-            Image(systemName: configuration.isOn ? "checkmark.circle.fill" : "circle")
+            Image(systemName: isTrueSelected ? "checkmark.circle.fill" : "circle")
                 .resizable()
                 .frame(width: 36, height: 36)
-                .foregroundColor(configuration.isOn ? .green : .gray)
+                .foregroundColor(isTrueSelected ? .green : .gray)
                 .font(.system(size: 20, weight: .bold, design: .default))
                 .onTapGesture {
                     selection = !selection
@@ -272,10 +310,11 @@ struct ToggleQuestionProposal1: View {
     @State private var selection = false
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        HStack(spacing: 10) {
             text
+                .padding(5)
             Toggle(isOn: $selection) {
-                Text(selection ? trueOption : falseOption)
+                Text(selectedOption == trueOption ? trueOption : falseOption)
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }
             .toggleStyle(CheckboxStyle(trueOption: trueOption, falseOption: falseOption, selectedOption: $selectedOption))
@@ -288,19 +327,20 @@ struct ToggleQuestionProposal2: View {
     var trueOption: String = "Yes"
     var falseOption: String = "No"
     @Binding var selectedOption: String
-    @State private var selection = false
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        HStack(spacing: 10) {
             text
-            Toggle(isOn: $selection) {
-                Text(selection ? trueOption : falseOption)
+                .padding(5)
+            Toggle(isOn: Binding<Bool>(get: {return selectedOption == trueOption},
+                                       set: { _ in selectedOption == trueOption })) {
+                Text(selectedOption == trueOption ? trueOption : falseOption)
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }
             .onTapGesture {
-                print("tapped")
-                selectedOption = selection ? falseOption : trueOption
+                selectedOption = selectedOption == trueOption ? falseOption : trueOption
             }
+            .padding(5)
         }
     }
 }
@@ -399,13 +439,6 @@ extension FormView {
         case .autonomicDysreflexia: return AnyView(AutonomicDysreflexiaFormView())
         case .mobility: return AnyView(MobilityFormView())
         case .respiration: return AnyView(RespirationFormView())
-//            case .basicInfo: return AnyView(BasicInfoFormView())
-//            case .spinalCordInjury: return AnyView(SpinalCordInjuryFormView())
-           
-//            case .bladder: return AnyView(BladderFormView())
-//            case .bowel: return AnyView(BowelFormView())
-//            case .skin: return AnyView(SkinFormView())
-//            case .transfers: return AnyView(TransfersFormView())
         }
     }
 }

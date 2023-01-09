@@ -7,6 +7,11 @@
 
 import Foundation
 
+// We're trying to target 1980/1/1 as the default date of birth
+let targetYearGap = 1980 - Calendar.current.component(.year, from: Date())
+let targetMonthGap = 1 - Calendar.current.component(.month, from: Date())
+let targetDayGap = 1 - Calendar.current.component(.day, from: Date())
+
 struct FormModel: Codable {
     // Basic Info
     var firstName: String = ""
@@ -16,10 +21,10 @@ struct FormModel: Codable {
     var height: String = ""
     var weight: String = ""
     var dateOfBirth: String = ""
-    var birthDay: Date = Calendar.current.date(byAdding: DateComponents(year: -40), to: Date()) ?? Date()
+    var birthDay: Date = Calendar.current.date(byAdding: DateComponents(year: targetYearGap, month: targetMonthGap, day: targetDayGap), to: Date()) ?? Date()
     
     // Additional basic info
-    var bloodType: String?
+    var bloodType: String = "A"
     var healthCardNumber: String = ""
     var medicAlertID: String = "" // TODO: make it a text area
     var bloodPressure: String = ""
@@ -28,8 +33,8 @@ struct FormModel: Codable {
     var street: String = ""
     var unit: String = ""
     var city: String = ""
-    var province: String?
-    var country: String?
+    var province: String = "ON"
+    var country: String = "Canada"
     var postalCode: String = ""
     
     // Emergency contact
@@ -40,25 +45,20 @@ struct FormModel: Codable {
     
     // Information about injury
     var dateInjury = Date()
-    var typeInjury: String?
-    var completenessInjury: String?
-    var levelInjury: String?
+    var typeInjury: String = "Traumatic"
+    var completenessInjury: String = "Complete"
+    var levelInjury: String = "Light"
     var causeInjury: String = ""
     
     // Additional information about injury and assistance
-    var assistBowel: String?
-    var assistBladder: String?
-    var assistWheelchair: String?
-    var assistTurning: String?
-    var assistEating: String?
-    
-    // Spinal Cord Injury
-    var knowDateOfSpinalCordInjury: String?
-    var causeOfSpinalCordInjury: String?
-    var levelOfSpinalCordInjury: String?
+    var assistBowel: String = "Yes"
+    var assistBladder: String = "Yes"
+    var assistWheelchair: String = "Yes"
+    var assistTurning: String = "Yes"
+    var assistEating: String = "Yes"
     
     // Autonomic Dysreflexia (AD)
-    var experienceAD: String?
+    var experienceAD: String = "Yes"
     var symptomsAD = [String]()
     var otherAD: String = ""
     var freeTextAD: String = ""
@@ -80,17 +80,8 @@ struct FormModel: Codable {
     var useOtherAssistiveEquipment: String = "No"
     var otherAssistiveEquipmentDetails: String = ""
     
-    // Bladder Management
-    var injuryAffectUrinaryFunction: String?
-    var bladderManagementRoutine = [String]()
-    
-    // Bowel Management
-    var injuryAffectBowelFunction: String?
-    var bowelRoutineSchedule: String?
-    var bowelRoutineTime: String?
-    
     // New Bowel Management
-    var bowelManagementFrequency: String?
+    var bowelManagementFrequency: String = "More than once a day"
     var bowelManagementTime = Date()
     var requireSupository: String = "No"
     var requireMicroEnema: String = "No"
@@ -108,11 +99,6 @@ struct FormModel: Codable {
     var requireIlealConduit: String = "No"
     var throughYourUrethra: String = "No"
     var throughAbdominalStoma: String = "No"
-    
-    // Skin Care/Pressure Relief
-    var hasPressureSores: String?
-    var requireTurningAssistance: String?
-    var hasAreasAvoidPressure: String?
     
     // Transfers
     var transferAssistanceInfo: String?
@@ -165,31 +151,9 @@ let testFormData = FormModel(
     weight: "150lbs",
     dateOfBirth: "01/01/1990",
     
-    // Spinal Cord Injury
-    knowDateOfSpinalCordInjury: "Yes",
-    causeOfSpinalCordInjury: "x",
-    levelOfSpinalCordInjury: "1",
-    
     // Autonomic Dysreflexia (AD)
     experienceAD: "Yes",
-    symptomsAD: ["x"],
+    symptomsAD: ["x"]
     
-    // Bladder Management
-    injuryAffectUrinaryFunction: "x",
-    bladderManagementRoutine: ["x"],
-    
-    // Bowel Management
-    injuryAffectBowelFunction: "x",
-    bowelRoutineSchedule: "x",
-    bowelRoutineTime: "x",
-    
-    // Skin Care/Pressure Relief
-    hasPressureSores: "x",
-    requireTurningAssistance: "Yes",
-    hasAreasAvoidPressure: "No",
-    
-    // Transfers
-    transferAssistanceInfo: "x",
-    otherTransferInfo: "x"
 )
 #endif

@@ -27,7 +27,7 @@ struct NewBladderFormView: View {
                             selectedOption: $appViewModel.formViewModel.formModel.requireIndwellingCatheter)
 
                         ToggleQuestionProposal2(
-                            text: Text("Do you require an condom catheter?"),
+                            text: Text("Do you require a condom catheter?"),
                             selectedOption: $appViewModel.formViewModel.formModel.requireCondomCatheter)
 
                         ToggleQuestionProposal2(

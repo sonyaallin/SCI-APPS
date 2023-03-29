@@ -40,7 +40,7 @@ struct NewBasicInfoFormView: View {
                                 )
 
                                 TextQuestion(
-                                    text: Text("First name:"),
+                                    text: Text("Last name:"),
                                     textField: $appViewModel.formViewModel.formModel.lastName
                                 )
 

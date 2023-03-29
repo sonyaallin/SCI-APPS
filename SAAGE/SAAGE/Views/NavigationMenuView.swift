@@ -10,7 +10,7 @@ import SwiftUI
 let headerHeight: CGFloat = CGFloat(50);
 
 enum NavigationItems: String, CaseIterable {
-    case myCarePlan = "My care plan"
+    case myCarePlan = "My Care Plan"
     case howToUse = "How to use"
     case about = "About"
     case logout = "Logout"

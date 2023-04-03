@@ -39,6 +39,17 @@ struct AboutView: View {
                     .fontWeight(.bold)
                 Text("This is an open source project. Source code for this project can be viewed on Github")
             }
+
+            VStack(alignment: .leading, spacing: 5) {
+                Text("To Begin")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                Text("The current version is a prototype and 
+intended for evaluation purposes only. To begin your evaluation 
+of the prototype, please select 'My Care Plan' from the menu 
+options at the top left.")
+            }
+
         }
     }
 }
